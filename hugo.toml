@@ -8,4 +8,38 @@ theme = 'PaperMod'
     identifier = "about"
     name = "About"
     url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume"
     weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 15
+
+[params]
+    ShowReadingTime = true
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = """
+Welcome! I'm Siddiq, a [your role/description].
+
+[Write a brief intro about yourself and what visitors can find on your site]
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mohaids"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "your-linkedin-url"
+
+favicon = "favicon.ico"
+
+[params.assets]
+favicon16x16 = "/assets/favicon-16x16.png"
+favicon32x32 = "/assets/favicon-32x32.png"
+apple_touch_icon = "/assets/apple-touch-icon.png"

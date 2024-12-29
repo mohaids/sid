@@ -7,4 +7,4 @@ layout = "single"
 tags = ["updates", "personal"]
 +++
 
-I'm just a pretty cool guy, no?
+I'm just a chill guy, no?
