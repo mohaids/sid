@@ -4,6 +4,7 @@ draft = false
 title = '2024 Retrospective'
 summary = "A look back at the 2024 season"
 ShowToc = true
+tags = ["🔄meta", "🧠retrospective", "personal"]
 +++
 
 # Introduction
