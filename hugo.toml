@@ -1,7 +1,8 @@
-baseURL = 'https://sid-94h.pages.dev/'
+baseURL = 'https://siddiqmohaideen.com/'
 languageCode = 'en-us'
 title = 'Siddiq'
 theme = 'PaperMod'
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [menu]
   [[menu.main]]
@@ -25,9 +26,9 @@ theme = 'PaperMod'
   [params.homeInfoParams]
     Title = "Hi there 👋"
     Content = """
-Welcome! I'm Siddiq, a [your role/description].
+Welcome! I'm Siddiq, a sophmore student at RPI.
 
-[Write a brief intro about yourself and what visitors can find on your site]
+[Website is still under construction, please be patient]
 """
 
   [[params.socialIcons]]
