@@ -1,5 +1,5 @@
 +++
-date = '2024-12-30T00:02:50-05:00'
+date = '2025-01-11T00:02:50-05:00'
 draft = false
 title = 'AWS Cloud Practioner Experience'
 summary = "Taking the AWS CLF exam what what I learned from it"
