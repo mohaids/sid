@@ -26,9 +26,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [params.homeInfoParams]
     Title = "Hi there 👋"
     Content = """
-Welcome! I'm Siddiq, a sophmore student at RPI.
+Welcome! I'm Siddiq, a sophmore ITWS (Information Technology & Web Science) student at RPI.
 
-[Website is still under construction, please be patient]
+[🚧Website is still under construction, please be patient🚧]
 """
 
   [[params.socialIcons]]
