@@ -5,6 +5,10 @@ title = 'AWS Cloud Practioner Experience'
 summary = "Taking the AWS CLF exam what what I learned from it"
 ShowToc = true
 tags = ["☁️ cloud", "personal"]
+[cover]
+image = "/aws-cover.png"
+alt = "aws certification image"
+relative = false
 +++
 
 # Introduction
