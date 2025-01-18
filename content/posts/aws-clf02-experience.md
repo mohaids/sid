@@ -14,7 +14,7 @@ relative = false
 # Introduction
 Just a few hours ago did I see the ending screen congratulating me with a much awaited word: "PASS". I still haven't seen the status of my passing reflected on my AWS Account, nor have I recieved an email - but I am told it will take until 5 days. This post is to hopefully be yet another small stepping stone towards other certiciations such as Network+ and HTB's CPTS certification.
 # What is AWS CLF-02?
-Foremost, I question that has been bugging me, and probably has bugging you as well is, why is the exam called "Certified Cloud Practioner", but is abbreviated as "CLF" - which apparently means "Certified Level Foundation". But it will remain "CCP" to me.
+This question has been bugging me, and probably has bugging you as well is, why is the exam called "Certified Cloud Practioner", but is abbreviated as "CLF" - which apparently means "Certified Level Foundation". But it will remain "CCP" to me.
 
 Anyways, this exam is truly a foundational exam that introduces potential certificate holders to a wide array of AWS Services and some of their interactions with each other (on a high level).
 
