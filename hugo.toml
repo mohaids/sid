@@ -20,6 +20,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
     name = "Tags"
     url = "/tags/"
     weight = 15
+  [[menu.main]]
+    identifier = "htb"
+    name = "HackTheBox"
+    url = "https://app.hackthebox.com/users/2153736"
+    weight = 5
 
 [params]
     ShowReadingTime = true
