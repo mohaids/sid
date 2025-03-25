@@ -2,8 +2,13 @@
 date = '2025-03-09T18:54:21-04:00'
 draft = false
 title = 'UCONN CyberSEED 2025 Retrospective'
+summary = "Couple of insights from the CTF"
 ShowToc = true
 tags = ["🏆 competition"]
+[cover]
+image = "/rpi-cyberseed.jpg"
+alt = "ctf team image"
+relative = false
 +++
 
 # Introduction

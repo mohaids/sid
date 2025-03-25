@@ -13,10 +13,7 @@
       <link>http://localhost:1313/posts/cyberseed-retro/</link>
       <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
       <guid>http://localhost:1313/posts/cyberseed-retro/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;7 grueling hours. From 10 AM to 5 PM on the last Saturday before the end of my Spring break, I spent trying to solve the &amp;ldquo;Forensic &amp;amp; Log Analysis&amp;rdquo; and &amp;ldquo;Network Traffic Analysis&amp;rdquo; sections of the 2025 CyberSEED CTF competition. In this time period, I was either hunched, staring into my computer screen or pacing around, stressed out of my mind.&lt;/p&gt;
-&lt;h3 id=&#34;forensic--log-analysis&#34;&gt;Forensic &amp;amp; Log Analysis:&lt;/h3&gt;
-&lt;p&gt;If I had to pick a favorite section, this would be my SECOND favorite. Nothing can beat the fun of OSI. Anyway, this section was pretty fun as well. In the end, I got 95.8% completion (with a 77.4% accuracy 💀). The &amp;lsquo;Hard&amp;rsquo; problem was pretty fun - I was given a custom file format, and a description of how the file was formatted (eg. how many bytes were each &amp;lsquo;section&amp;rsquo;). This was the most fun I&amp;rsquo;d had on a ctf problem as I first thought of giving up since the file was extremely long and I didn&amp;rsquo;t want to spend my time grueling over trying to solve a complex question, such as which log entry transferred over the most bytes. Since this is the age of AI, I used it to first transcribe what the hex were as I wasn&amp;rsquo;t able to simple copy paste them to a new txt file 😭. After I got the clean version of only the hex values I needed from the file, I could use the very same AI to analyze the clean verison of the hex and give me very accurate answers.&lt;/p&gt;</description>
+      <description>Couple of insights from the CTF</description>
     </item>
   </channel>
 </rss>
