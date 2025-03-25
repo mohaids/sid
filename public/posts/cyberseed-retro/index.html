@@ -5,11 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | Siddiq</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<title>UCONN CyberSEED 2025 Retrospective | Siddiq</title>
+<meta name="keywords" content="🏆 competition">
+<meta name="description" content="Introduction
+7 grueling hours. From 10 AM to 5 PM on the last Saturday before the end of my Spring break, I spent trying to solve the &ldquo;Forensic &amp; Log Analysis&rdquo; and &ldquo;Network Traffic Analysis&rdquo; sections of the 2025 CyberSEED CTF competition. In this time period, I was either hunched, staring into my computer screen or pacing around, stressed out of my mind.
+Forensic &amp; Log Analysis:
+If I had to pick a favorite section, this would be my SECOND favorite. Nothing can beat the fun of OSI. Anyway, this section was pretty fun as well. In the end, I got 95.8% completion (with a 77.4% accuracy 💀). The &lsquo;Hard&rsquo; problem was pretty fun - I was given a custom file format, and a description of how the file was formatted (eg. how many bytes were each &lsquo;section&rsquo;). This was the most fun I&rsquo;d had on a ctf problem as I first thought of giving up since the file was extremely long and I didn&rsquo;t want to spend my time grueling over trying to solve a complex question, such as which log entry transferred over the most bytes. Since this is the age of AI, I used it to first transcribe what the hex were as I wasn&rsquo;t able to simple copy paste them to a new txt file 😭. After I got the clean version of only the hex values I needed from the file, I could use the very same AI to analyze the clean verison of the hex and give me very accurate answers.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/404.html">
+<link rel="canonical" href="http://localhost:1313/posts/cyberseed-retro/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
@@ -18,7 +21,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/cyberseed-retro/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +61,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -128,7 +131,65 @@
     </nav>
 </header>
 <main class="main">
-<div class="not-found">404</div>
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      UCONN CyberSEED 2025 Retrospective
+    </h1>
+    <div class="post-meta"><span title='2025-03-09 18:54:21 -0400 EDT'>March 9, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#forensic--log-analysis" aria-label="Forensic &amp; Log Analysis:">Forensic &amp; Log Analysis:</a></li>
+                <li>
+                    <a href="#network-traffic-analysis-" aria-label="Network Traffic Analysis 🤮">Network Traffic Analysis 🤮</a></li>
+                <li>
+                    <a href="#osi" aria-label="OSI">OSI</a></li>
+                <li>
+                    <a href="#takeaway" aria-label="Takeaway">Takeaway</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>7 grueling hours. From 10 AM to 5 PM on the last Saturday before the end of my Spring break, I spent trying to solve the &ldquo;Forensic &amp; Log Analysis&rdquo; and &ldquo;Network Traffic Analysis&rdquo; sections of the 2025 CyberSEED CTF competition. In this time period, I was either hunched, staring into my computer screen or pacing around, stressed out of my mind.</p>
+<h3 id="forensic--log-analysis">Forensic &amp; Log Analysis:<a hidden class="anchor" aria-hidden="true" href="#forensic--log-analysis">#</a></h3>
+<p>If I had to pick a favorite section, this would be my SECOND favorite. Nothing can beat the fun of OSI. Anyway, this section was pretty fun as well. In the end, I got 95.8% completion (with a 77.4% accuracy 💀). The &lsquo;Hard&rsquo; problem was pretty fun - I was given a custom file format, and a description of how the file was formatted (eg. how many bytes were each &lsquo;section&rsquo;). This was the most fun I&rsquo;d had on a ctf problem as I first thought of giving up since the file was extremely long and I didn&rsquo;t want to spend my time grueling over trying to solve a complex question, such as which log entry transferred over the most bytes. Since this is the age of AI, I used it to first transcribe what the hex were as I wasn&rsquo;t able to simple copy paste them to a new txt file 😭. After I got the clean version of only the hex values I needed from the file, I could use the very same AI to analyze the clean verison of the hex and give me very accurate answers.</p>
+<h3 id="network-traffic-analysis-">Network Traffic Analysis 🤮<a hidden class="anchor" aria-hidden="true" href="#network-traffic-analysis-">#</a></h3>
+<p>Dread it, run from it, NAT still arrives.</p>
+<p>I tried doing my best on this section, but I could only complete 1.5 out of 4 problems. I clearly need to get more practice / become more familiar with Wireshark.</p>
+<h3 id="osi">OSI<a hidden class="anchor" aria-hidden="true" href="#osi">#</a></h3>
+<p>My favorite section, by far. One challenge was a simple reverse image search, but it took me a little bit as it was an obscure image and there were numerous red-herrings. Another one was questions regarding a file, which I later found out to be a virus. I used Virustotal.com, but it seems like Malware Bazaar is the preferred site for this challenge. The final challenge I tried working on was something related to dig, but I was having trouble understanding it, so that an area to work on for next time.</p>
+<h3 id="takeaway">Takeaway<a hidden class="anchor" aria-hidden="true" href="#takeaway">#</a></h3>
+<p>Highly recommend it. While at times I wanted to pull my hair out, I really had a lot of fun doing these challenges. I learned what some of my weak points are and am sure to beef up on those topics in preparation for other NCL competitions.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/-competition/">🏆 Competition</a></li>
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

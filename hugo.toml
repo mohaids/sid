@@ -33,7 +33,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     Content = """
 Welcome! I'm Siddiq, a sophmore ITWS (Information Technology & Web Science) student at RPI.
 
-[🚧Website is still under construction, please be patient🚧]
+[🚧Website is still a work in progress, new material will be added soon.🚧]
 """
 
   [[params.socialIcons]]
@@ -42,6 +42,9 @@ Welcome! I'm Siddiq, a sophmore ITWS (Information Technology & Web Science) stud
   [[params.socialIcons]]
     name = "linkedin"
     url = "your-linkedin-url"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:rpi.siddiq@gmail.com"
 
 favicon = "favicon.ico"
 

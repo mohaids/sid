@@ -7,4 +7,10 @@ layout = "single"
 tags = ["updates", "personal"]
 +++
 
-I'm just a chill guy, no?
+Hey!
+
+Thank you for visiting my corner of the internet - really. I'm Siddiq, someone who's interested in philosophy, cybersecurity, and last but not least, k-pop.
+
+This website serves as a hub for all things me - at the moment, here you will find my blogs about cybersecurity stuff. But I do plan on improving this site by adding more interesting things 🙏
+
+In the meantime, have a wonderful day.
