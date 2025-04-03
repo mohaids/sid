@@ -11,9 +11,11 @@ The purpose of this specific blog is to create a public repository of all the ta
 ### 4-2-2025
 Big Item: 
     - To make progress on the Mongoose project
+
     What this means:
         - To make progress on the process_resume endpoint
         - To convert the existing gemini.py file to not use local storage anymore
+
     Time willing to allocate:
         - 2 hours
     
@@ -22,3 +24,11 @@ Medium Item:
     Time willing to allocate:
         - 1 hour
 
+### 4-3-2025
+Big Items:
+    - FOCS HW 11
+    - Web Sci Lab 5
+
+Medium Items:
+    - RPI-SEC training materials of tomorrow's meeting
+    - NCL Gym - Password Cracking
