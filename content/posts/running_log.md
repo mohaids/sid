@@ -28,7 +28,7 @@ Medium Item:
 **Big Items**:
 
     - FOCS HW 11 ✅
-    - Web Sci Lab 5
+    - Web Sci Lab 5 ✅
 
 **Medium Items**:
 
