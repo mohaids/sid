@@ -25,15 +25,16 @@ Medium Item:
         - 1 hour
 
 ### 4-3-2025
-Big Items:
+**Big Items**:
 
-    - FOCS HW 11
+    - FOCS HW 11 ✅
     - Web Sci Lab 5
 
-Medium Items:
+**Medium Items**:
 
     - RPI-SEC training materials of tomorrow's meeting
     - NCL Gym - Password Cracking
 
-Small Items:
+**Small Items**:
+
     - The Actual Gym; 30 mins

@@ -6,8 +6,30 @@
     <description>Recent content in Posts on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 18:54:21 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 14:05:31 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running_log</title>
+      <link>http://localhost:1313/posts/running_log/</link>
+      <pubDate>Wed, 02 Apr 2025 14:05:31 -0400</pubDate>
+      <guid>http://localhost:1313/posts/running_log/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
+&lt;p&gt;The purpose of this specific blog is to create a public repository of all the tasks I&amp;rsquo;ve acheived in a day - and my plan is to continually update this blog and review my work on a day-to-day and week-to-week basis.&lt;/p&gt;
+&lt;h3 id=&#34;4-2-2025&#34;&gt;4-2-2025&lt;/h3&gt;
+&lt;p&gt;Big Item:
+- To make progress on the Mongoose project&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;What this means:
+    - To make progress on the process_resume endpoint
+    - To convert the existing gemini.py file to not use local storage anymore
+
+Time willing to allocate:
+    - 2 hours
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Medium Item:
+- To make progress on at least (1) category of the NCL gym
+Time willing to allocate:
+- 1 hour&lt;/p&gt;</description>
+    </item>
     <item>
       <title>UCONN CyberSEED 2025 Retrospective</title>
       <link>http://localhost:1313/posts/cyberseed-retro/</link>
