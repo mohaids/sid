@@ -8,6 +8,35 @@ ShowToc = true
 # Introduction:
 The purpose of this specific blog is to create a public repository of all the tasks I've acheived in a day - and my plan is to continually update this blog and review my work on a day-to-day and week-to-week basis.
 
+### 4-4-2025
+**Big Items**:
+
+    - Mongoose project
+
+**Medium Items**:
+
+    - NCL Gym - Password Cracking
+
+**Small Items**:
+
+    - 
+
+### 4-3-2025
+**Big Items**:
+
+    - FOCS HW 11 ✅
+    - Web Sci Lab 5 ✅
+
+**Medium Items**:
+
+    - RPI-SEC training materials of tomorrow's meeting 🟡
+    - NCL Gym - Password Cracking 🟡
+
+**Small Items**:
+
+    - The Actual Gym; 30 mins ✅
+        Unbelievably sore though
+
 ### 4-2-2025
 Big Item: 
     - To make progress on the Mongoose project
@@ -23,19 +52,3 @@ Medium Item:
     - To make progress on at least (1) category of the NCL gym
     Time willing to allocate:
         - 1 hour
-
-### 4-3-2025
-**Big Items**:
-
-    - FOCS HW 11 ✅
-    - Web Sci Lab 5 ✅
-
-**Medium Items**:
-
-    - RPI-SEC training materials of tomorrow's meeting
-    - NCL Gym - Password Cracking
-
-**Small Items**:
-
-    - The Actual Gym; 30 mins ✅
-        Unbelievably sore though
