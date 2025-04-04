@@ -37,4 +37,5 @@ Medium Item:
 
 **Small Items**:
 
-    - The Actual Gym; 30 mins
+    - The Actual Gym; 30 mins ✅
+        Unbelievably sore though
