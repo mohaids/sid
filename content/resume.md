@@ -2,7 +2,7 @@
 date = '2024-12-29T10:53:50-05:00'
 draft = false
 title = 'Resumé'
-description = 'My professional experience and skills as of December 2024'
+description = 'My professional experience and skills as of April 2025'
 +++
 
 {{< rawhtml >}}
