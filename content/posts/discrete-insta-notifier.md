@@ -5,6 +5,10 @@ title = 'Discrete Insta Notifier'
 summary = "Using tampermonkey and discord webhooks to get insta notifications discretely"
 ShowToc = true
 tags = ["🎉 projects"]
+[cover]
+image = "/insta-discrete-cover.png"
+alt = "tampermonkey and discord cover image"
+relative = false
 +++
 
 # Introduction
