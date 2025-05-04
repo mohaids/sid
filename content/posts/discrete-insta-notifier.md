@@ -22,10 +22,8 @@ Thus, you can discretely receive Instagram notifications via a Discord message -
 The only apparent downside to this whole process is that you have to keep the tab running in the background for this to work. 
 
 ### Materials needed:
-\- personal Discord server
-
-\- tampermonkey browser extension
-
+1. personal Discord server
+2. tampermonkey browser extension
     \- thus, you need to use a desktop browser
 
 ### Step 1: Set up your Discord webhook
@@ -100,10 +98,7 @@ To ensure that this flow works, ask your friend, or use an alt account to send y
 
 ## Future Plans:
 Current contraints:
-\- Ideally you'd want to monitor just one user's DMs, but this script monitors all the DMs you get
-
+1. Ideally you'd want to monitor just one user's DMs, but this script monitors all the DMs you get
     \- Use a more finecomb technique or continue to experiment if tampermonkey can solve this issue
-
-\- This process requires you to have instagram.com running in the background
-
+2. This process requires you to have instagram.com running in the background
     \- Potential solution: utilize the cloud in some way?
