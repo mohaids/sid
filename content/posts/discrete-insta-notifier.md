@@ -21,6 +21,10 @@ Thus, you can discretely receive Instagram notifications via a Discord message -
 
 The only apparent downside to this whole process is that you have to keep the tab running in the background for this to work. 
 
+**FAQ** 
+\- Why not use regular desktop instagram notifications: 
+    - because the whole point of this process is being discrete.
+
 ### Materials needed:
 1. personal Discord server
 2. tampermonkey browser extension
