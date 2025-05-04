@@ -6,7 +6,7 @@ summary = "Using tampermonkey and discord webhooks to get insta notifications di
 ShowToc = true
 tags = ["🎉 projects"]
 [cover]
-image = "/insta-discrete-cover.png"
+image = 
 alt = "tampermonkey and discord cover image"
 relative = false
 +++
