@@ -11,15 +11,20 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = "/about/"
     weight = 20
   [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
-    url = "/resume"
-    weight = 10
+    identifier = "project-updates"
+    name = "project-updates"
+    url = "/project-updates/"
+    weight = 17
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
     weight = 15
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume"
+    weight = 10
   [[menu.main]]
     identifier = "htb"
     name = "HackTheBox"

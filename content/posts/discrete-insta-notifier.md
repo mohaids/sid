@@ -12,7 +12,7 @@ relative = false
 +++
 
 # Introduction
-For one reason or the other, one might want to discretely get Instagram notifications, and one way you could go by doing that is getting an alert on your Discord if you get an Insta notification.
+For one reason or the other, one might want to discretely get Instagram notifications, and one way you could go by doing that is getting an alert on your Discord server if you get an Insta notification.
 
 ## Overview of this process flow:
 For this proof-of-concept, you need to have the Instagram Direct Message (DM) tab running in the background. The purpose of [tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) is to continuously monitor the DMs page and see if the tab's title changes as a result of a new DM. If it detects the change, it should call your personal Discord server's webhook to send a message.
