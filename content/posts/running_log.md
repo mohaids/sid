@@ -1,6 +1,6 @@
 +++
 date = '2025-04-02T14:05:31-04:00'
-draft = false
+draft = true
 title = 'Running_log'
 ShowToc = true
 +++
