@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 6.27
+Insane that t3.micro isn't enough to even run the chrome installation process
+
 ### 6.22
 1. Stopped most of the VMs - its actually SO expensive to have like 6 VMs running for a month.
     - [] Action Item: Currently trying to replicate the whole project in a fresh t3.micro VM
