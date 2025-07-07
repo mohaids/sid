@@ -4,6 +4,12 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.7
+Apparently you can include secrets in Docker @ runtime. How do you do this?
+
+### 7.5
+Okay, big breakthrough - headless mode IS possible. Trying to use Docker since this is the case.
+
 ### 6.27
 Insane that t3.micro isn't enough to even run the chrome installation process
 
