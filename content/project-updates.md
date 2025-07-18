@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.18
+Uploaded image to ECR, stored cookies in S3, and created container instance on ECS - everythings working round the clock. Left it on since yesterday evening, checked it today noon, and it still functions!!
+
 ### 7.7
 Apparently you can include secrets in Docker @ runtime. How do you do this?
 
