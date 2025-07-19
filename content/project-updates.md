@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.19
+Need to create architecture diagram + study for Linux+
+
 ### 7.18
 Uploaded image to ECR, stored cookies in S3, and created container instance on ECS - everythings working round the clock. Left it on since yesterday evening, checked it today noon, and it still functions!!
 
