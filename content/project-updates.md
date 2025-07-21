@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.20
+Took a day break to focus on Linux+ work
+
 ### 7.19
 Need to create architecture diagram + study for Linux+
 
