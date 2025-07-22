@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.21
+Worked on school work and did some AWS-SAA studying
+
 ### 7.20
 Took a day break to focus on Linux+ work
 
