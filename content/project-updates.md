@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.25
+Studied more of SAA - went through S3
+
 ### 7.24
 Project still on a bit of a haitus - studying for SAA.
 
