@@ -4,6 +4,9 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 7.26
+Finished S3 + CloudFront + Global Accelerator
+
 ### 7.25
 Studied more of SAA - went through S3
 
