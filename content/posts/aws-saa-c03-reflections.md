@@ -1,7 +1,7 @@
 +++
 date = '2025-08-04T10:49:24-04:00'
 draft = false
-title = 'AWS SAA-C03 Reflections'
+title = 'AWS Certified Solutions Architect - Associate Exam Reflections'
 summary = "Taking the AWS SAA-C03 exam what what I learned from it"
 ShowToc = true
 tags = ["☁️ cloud", "personal"]
