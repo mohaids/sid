@@ -28,7 +28,9 @@ Shout out to the users on [r/awscertifications](https://www.reddit.com/r/AWSCert
 # Takeaways
 Solid exam, really tested my AWS knowledge thoroughly. 
 
-- The exam *will* test your depth. Knowing what a service is isn't enough — you need to understand when and *why* you’d use one over another.
+- The exam *will* test your depth. Knowing what a service is isn't enough - you need to understand when and *why* you’d use one over another. 
+
+For example, you should know when to choose FSx for Windows File Server vs FSx for NetApp ONTAP, even though both support Windows-based workloads.
 - Don’t cram like I did. Two intense weeks worked for me, but it was high-stress. If I could do it over, I’d spread it out more.
 - Track your progress during the exam. My scratch-paper tracking method helped reduce panic and focus on logic over memory.
 
