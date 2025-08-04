@@ -18,6 +18,8 @@ During the exam, I felt becoming more dreadful as I saw more questions because I
 
 This system definetely helped me pass the exam because I didn't have to remember what options I felt could not be correct. 
 
+For context: Pearson’s testing platform doesn’t let you strike through answer choices, so managing your own process is key - especially when you’re unsure and need to revisit questions later.
+
 # My Experience
 I already knew a lot of the services from my previous AWS Certified Cloud Practioner (CLF-C02) exam and from my own dabbling with AWS services (such as EC2, ECS, Secrets Manager, etc.) while building my [discrete instagram bot](https://github.com/mohaids/instagram-to-discord-notifier).
 
