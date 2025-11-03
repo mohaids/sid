@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Discrete Insta Notifier | Siddiq</title>
+<meta name="keywords" content="🎉 projects">
+<meta name="description" content="Using tampermonkey and discord webhooks to get insta notifications discretely">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/discrete-insta-notifier/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/discrete-insta-notifier/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Siddiq (Alt + H)">Siddiq</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/resume" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/project-updates/" title="Project Updates">
+                    <span>Project Updates</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Discrete Insta Notifier
+    </h1>
+    <div class="post-meta"><span title='2025-05-04 11:59:16 -0400 EDT'>May 4, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/insta-discrete-cover.png" alt="tampermonkey and discord cover image">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a><ul>
+                        
+                <li>
+                    <a href="#overview-of-this-process-flow" aria-label="Overview of this process flow:">Overview of this process flow:</a><ul>
+                        
+                <li>
+                    <a href="#materials-needed" aria-label="Materials needed:">Materials needed:</a></li>
+                <li>
+                    <a href="#step-1-set-up-your-discord-webhook" aria-label="Step 1: Set up your Discord webhook">Step 1: Set up your Discord webhook</a></li>
+                <li>
+                    <a href="#step-2-install-tampermonkey-and-load-the-script" aria-label="Step 2: Install tampermonkey and load the script:">Step 2: Install tampermonkey and load the script:</a></li>
+                <li>
+                    <a href="#step-3-test-the-flow" aria-label="Step 3: Test the flow">Step 3: Test the flow</a></li></ul>
+                </li>
+                <li>
+                    <a href="#future-plans" aria-label="Future Plans:">Future Plans:</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>For one reason or the other, one might want to discretely get Instagram notifications, and one way you could go by doing that is getting an alert on your Discord server if you get an Insta notification.</p>
+<h2 id="overview-of-this-process-flow">Overview of this process flow:<a hidden class="anchor" aria-hidden="true" href="#overview-of-this-process-flow">#</a></h2>
+<p>For this proof-of-concept, you need to have the Instagram Direct Message (DM) tab running in the background. The purpose of <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">tampermonkey</a> is to continuously monitor the DMs page and see if the tab&rsquo;s title changes as a result of a new DM. If it detects the change, it should call your personal Discord server&rsquo;s webhook to send a message.</p>
+<p>Thus, you can discretely receive Instagram notifications via a Discord message - obviously not the actual content of the message, but that you received a message.</p>
+<p>The only apparent downside to this whole process is that you have to keep the tab running in the background for this to work.</p>
+<p><strong>FAQ</strong>
+- Why not use regular desktop instagram notifications:
+- because the whole point of this process is being discrete.</p>
+<h3 id="materials-needed">Materials needed:<a hidden class="anchor" aria-hidden="true" href="#materials-needed">#</a></h3>
+<ol>
+<li>
+<p>personal Discord server</p>
+</li>
+<li>
+<p>tampermonkey browser extension</p>
+<p>- thus, you need to use a desktop browser</p>
+</li>
+</ol>
+<h3 id="step-1-set-up-your-discord-webhook">Step 1: Set up your Discord webhook<a hidden class="anchor" aria-hidden="true" href="#step-1-set-up-your-discord-webhook">#</a></h3>
+<p>Naviage to your personal server&rsquo;s settings, click on &ldquo;Integration&rdquo; on the left side column, click on &ldquo;Webhooks&rdquo;, then finally click on &ldquo;New Webhook&rdquo;.</p>
+<p>Click on the newly created Webhook, here you can customize its name, icon, and channel. Most importantly make sure to copy / make note of its URL by clicking &ldquo;Copy Webhook URL&rdquo;.</p>
+<h3 id="step-2-install-tampermonkey-and-load-the-script">Step 2: Install tampermonkey and load the script:<a hidden class="anchor" aria-hidden="true" href="#step-2-install-tampermonkey-and-load-the-script">#</a></h3>
+<p>Personally I used Firefox, so I used this <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">link</a> to add the extension.</p>
+<p>Find the extention and click on &ldquo;Create a new script&hellip;&rdquo;</p>
+<p>Copy and paste the following script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ==UserScript==
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @name         Instagram DM Alert
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @namespace    http://tampermonkey.net/
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @version      1.1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @description  Alerts when Instagram tab title shows new DMs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @match        https://www.instagram.com/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @grant        GM_xmlhttpRequest
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// @connect      discord.com
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==/UserScript==
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;use strict&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">discordWebhookURL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://discord.com/api/webhooks/custom-url&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lastTitle</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">title</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isSending</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>; <span style="color:#75715e">// Prevent duplicate sends
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Script loaded!&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setInterval</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentTitle</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">title</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Checking title:&#34;</span>, <span style="color:#a6e22e">currentTitle</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">/\(\d+\)/</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">currentTitle</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">currentTitle</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">lastTitle</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span><span style="color:#a6e22e">isSending</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;DM detected! Sending to Discord...&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">isSending</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">GM_xmlhttpRequest</span>({
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">discordWebhookURL</span>, <span style="color:#75715e">// Direct Discord URL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;📬 New Instagram DM!&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">flags</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> <span style="color:#75715e">// Makes notification ephemeral
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                }),
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;Content-Type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;application/json&#34;</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">onload</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Success! Status:&#34;</span>, <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">lastTitle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">currentTitle</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">isSending</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">onerror</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;Webhook error:&#34;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">isSending</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            });
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }, <span style="color:#ae81ff">15000</span>); <span style="color:#75715e">// 15 second interval to avoid rate limits
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>})();
+</span></span></code></pre></div><p>Replace the <code>discordWebhookURL</code> variable with the Webhooks URL you copied.</p>
+<p>Click <code>ctrl+s</code> to save the code.</p>
+<h3 id="step-3-test-the-flow">Step 3: Test the flow<a hidden class="anchor" aria-hidden="true" href="#step-3-test-the-flow">#</a></h3>
+<p>To ensure that this flow works, ask your friend, or use an alt account to send your account a DM.</p>
+<h2 id="future-plans">Future Plans:<a hidden class="anchor" aria-hidden="true" href="#future-plans">#</a></h2>
+<p>Current contraints:</p>
+<ol>
+<li>
+<p>Ideally you&rsquo;d want to monitor just one user&rsquo;s DMs, but this script monitors all the DMs you get</p>
+<p>- Use a more finecomb technique or continue to experiment if tampermonkey can solve this issue</p>
+</li>
+<li>
+<p>This process requires you to have instagram.com running in the background</p>
+<p>- Potential solution: utilize the cloud in some way?</p>
+</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/-projects/">🎉 Projects</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Siddiq</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

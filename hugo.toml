@@ -9,7 +9,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 1
   [[menu.main]]
     identifier = "project-updates"
     name = "Project Updates"
@@ -25,31 +25,45 @@ ignoreLogs = ['warning-goldmark-raw-html']
     name = "Resume"
     url = "/resume"
     weight = 10
-  [[menu.main]]
-    identifier = "htb"
-    name = "HackTheBox"
-    url = "https://app.hackthebox.com/users/2153736"
-    weight = 5
 
 [params]
     ShowReadingTime = true
-  [params.homeInfoParams]
-    Title = "Hi there 👋"
-    Content = """
-Welcome! I'm Siddiq, a sophmore ITWS (Information Technology & Web Science) student at RPI.
+    
+    # Profile Mode Configuration
+    [params.profileMode]
+      enabled = true
+      title = "Siddiq Mohaideen"  # This replaces your homeInfoParams title
+      subtitle = "trying a bunch of stuff to see if they work"
+      imageUrl = "/ai-siddiq-logo.png"
+      imageTitle = "Siddiq Mohaideen"
+      imageWidth = 150  # Adjust as needed
+      imageHeight = 200  # Adjust as needed
+    
+    # Buttons for profile mode
+    [[params.profileMode.buttons]]
+      name = "Blogs"
+      url = "/archives"
+    [[params.profileMode.buttons]]
+      name = "Projects"
+      url = "/project-updates/"
+    [[params.profileMode.buttons]]
+      name = "Resume"
+      url = "/resume"
 
-[🚧Website is still a work in progress, new material will be added soon.🚧]
-"""
-
+  # Social Icons (moved inside profile mode)
   [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/mohaids"
+    name = "email"
+    url = "mailto:rpi.siddiq@gmail.com"
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/siddiq-mohaideen/"
   [[params.socialIcons]]
-    name = "email"
-    url = "mailto:rpi.siddiq@gmail.com"
+    name = "github"
+    url = "https://github.com/mohaids"
+  [[params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/siddiqmohaideen.com"
+  
 
 favicon = "favicon.ico"
 

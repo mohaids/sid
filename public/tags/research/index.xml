@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Siddiq</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Siddiq</description>
+    <title>Research on Siddiq</title>
+    <link>http://localhost:1313/tags/research/</link>
+    <description>Recent content in Research on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Nov 2025 12:33:42 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RCA &#43; LLM &#43; Binaries research progress</title>
       <link>http://localhost:1313/posts/bin-exp-ai-progress/</link>
@@ -48,41 +48,6 @@ perhaps these issues with the llm only giving one tool call can be solved by ask
 &lt;li&gt;Professor / Master Agent&lt;/li&gt;
 &lt;li&gt;Student   / Slave Agent(s)&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    <item>
-      <title>AWS Certified Solutions Architect - Associate Exam Reflections</title>
-      <link>http://localhost:1313/posts/aws-saa-c03-reflections/</link>
-      <pubDate>Mon, 04 Aug 2025 10:49:24 -0400</pubDate>
-      <guid>http://localhost:1313/posts/aws-saa-c03-reflections/</guid>
-      <description>Taking the AWS SAA-C03 exam what what I learned from it</description>
-    </item>
-    <item>
-      <title>(AWS &#43; Selenium)-powered Insta Notifier</title>
-      <link>http://localhost:1313/posts/aws-powered-insta-notifier/</link>
-      <pubDate>Wed, 07 May 2025 12:32:06 -0400</pubDate>
-      <guid>http://localhost:1313/posts/aws-powered-insta-notifier/</guid>
-      <description>Improvement: Using AWS + Selenium and discord webhooks to get insta notifications discretely</description>
-    </item>
-    <item>
-      <title>Discrete Insta Notifier</title>
-      <link>http://localhost:1313/posts/discrete-insta-notifier/</link>
-      <pubDate>Sun, 04 May 2025 11:59:16 -0400</pubDate>
-      <guid>http://localhost:1313/posts/discrete-insta-notifier/</guid>
-      <description>Using tampermonkey and discord webhooks to get insta notifications discretely</description>
-    </item>
-    <item>
-      <title>UCONN CyberSEED 2025 Retrospective</title>
-      <link>http://localhost:1313/posts/cyberseed-retro/</link>
-      <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
-      <guid>http://localhost:1313/posts/cyberseed-retro/</guid>
-      <description>Couple of insights from the CTF</description>
-    </item>
-    <item>
-      <title>AWS Cloud Practioner Experience</title>
-      <link>http://localhost:1313/posts/aws-clf02-experience/</link>
-      <pubDate>Sat, 11 Jan 2025 00:02:50 -0500</pubDate>
-      <guid>http://localhost:1313/posts/aws-clf02-experience/</guid>
-      <description>Taking the AWS CLF exam what what I learned from it</description>
     </item>
   </channel>
 </rss>
