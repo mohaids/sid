@@ -25,6 +25,7 @@
 &lt;li&gt;test with harder ctf challenge&lt;/li&gt;
 &lt;li&gt;integrate pighidra&lt;/li&gt;
 &lt;/ol&gt;
+&lt;hr&gt;
 &lt;p&gt;interesting observation(s):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;hallucination of tool calls - in the time when i didn&amp;rsquo;t include tool calls in the message i sent the llm, it hallucinated a tool call instead 😭. to be specific, it talk about there being a &lt;code&gt;run_gdb&lt;/code&gt; tool call, but it never existed?&lt;/li&gt;
