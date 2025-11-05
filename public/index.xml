@@ -6,33 +6,44 @@
     <description>Recent content on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Nov 2025 12:33:42 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 19:43:23 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RCA &#43; LLM reserach issues</title>
+      <link>http://localhost:1313/posts/bin-exp-issues/</link>
+      <pubDate>Tue, 04 Nov 2025 19:43:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/bin-exp-issues/</guid>
+      <description>&lt;p&gt;here are the following issues currently in prod:&lt;/p&gt;
+&lt;p&gt;[ ] canary exists for a binary, but initial crash analysis doesn&amp;rsquo;t pick it out.
+- potential solution: doing a &lt;code&gt;checksec&lt;/code&gt; at the beginning and including that in the final json (&lt;code&gt;crash_data&lt;/code&gt;). this will also include important information such as &lt;code&gt;PIE&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RCA &#43; LLM &#43; Binaries research progress</title>
       <link>http://localhost:1313/posts/bin-exp-ai-progress/</link>
       <pubDate>Sun, 02 Nov 2025 12:33:42 -0500</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-progress/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;11.02.2025&lt;/strong&gt;
-3 main issus I need to fix:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;making llm return a logical plan, along with tool calls?
+      <description>&lt;p&gt;&lt;strong&gt;11.04.2025&lt;/strong&gt;
+Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.&lt;/p&gt;
+&lt;p&gt;So far, in terms of completion, haven&amp;rsquo;t quite met all the requirements.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;extract said tool calls, run them in a single persistent session&lt;/li&gt;
-&lt;li&gt;send it back to llm, create loop of this&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; making the llm return a logical plan + gdb commands, sending it to a helper llm to call &lt;code&gt;tool calls&lt;/code&gt;. sending the results of the &lt;code&gt;tool calls&lt;/code&gt; back to the master llm.
+&lt;ul&gt;
+&lt;li&gt;issue: the gdb execution part isn&amp;rsquo;t quite working.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;test with harder ctf challenge&lt;/li&gt;
-&lt;li&gt;integrate pighidra&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;p&gt;interesting observation(s):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;hallucination of tool calls - in the time when i didn&amp;rsquo;t include tool calls in the message i sent the llm, it hallucinated a tool call instead 😭. to be specific, it talk about there being a &lt;code&gt;run_gdb&lt;/code&gt; tool call, but it never existed?&lt;/li&gt;
-&lt;li&gt;highly inconsistent responses. when i ran the llm with tool calls, it usually doesn&amp;rsquo;t provide detailed reasoning, however, one time it did, and i was overjoyed. but that only happened once, and its back to just calling tools. or shall i say, a single fucking tool, instead of the multiple it was seemingly instructed to do.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;hypothesis:&lt;/strong&gt;
-perhaps these issues with the llm only giving one tool call can be solved by asking it to give the gdb commands, extract them commands, send it to a helper llm that can convert the gdb commands to the tool calls, then give back the tool calls, which i will then execute in the gdbmanager session. then append those results back to messages. then call the main llm again asking if it either wants to create the rca report now that it has all the necessary information, or if it wants to continue to investigate. if it wants to continue to investigate, then do the same process over again.&lt;/p&gt;</description>
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
+&lt;ul&gt;
+&lt;li&gt;issue: need to actually do it, lol.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; implement pighidra into the mix.
+&lt;ul&gt;
+&lt;li&gt;issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;11.03.2025&lt;/strong&gt;
+Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭&lt;/p&gt;</description>
     </item>
     <item>
       <title>RCA (Root Cause Analysis) of Binaries AI Research</title>

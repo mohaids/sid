@@ -135,12 +135,12 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>11.02.2025 3 main issus I need to fix:
-making llm return a logical plan, along with tool calls? extract said tool calls, run them in a single persistent session send it back to llm, create loop of this test with harder ctf challenge integrate pighidra interesting observation(s):
-hallucination of tool calls - in the time when i didn’t include tool calls in the message i sent the llm, it hallucinated a tool call instead 😭. to be specific, it talk about there being a run_gdb tool call, but it never existed? highly inconsistent responses. when i ran the llm with tool calls, it usually doesn’t provide detailed reasoning, however, one time it did, and i was overjoyed. but that only happened once, and its back to just calling tools. or shall i say, a single fucking tool, instead of the multiple it was seemingly instructed to do. hypothesis: perhaps these issues with the llm only giving one tool call can be solved by asking it to give the gdb commands, extract them commands, send it to a helper llm that can convert the gdb commands to the tool calls, then give back the tool calls, which i will then execute in the gdbmanager session. then append those results back to messages. then call the main llm again asking if it either wants to create the rca report now that it has all the necessary information, or if it wants to continue to investigate. if it wants to continue to investigate, then do the same process over again.
+    <p>11.04.2025 Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.
+So far, in terms of completion, haven’t quite met all the requirements.
+making the llm return a logical plan &#43; gdb commands, sending it to a helper llm to call tool calls. sending the results of the tool calls back to the master llm. issue: the gdb execution part isn’t quite working. testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate issue: need to actually do it, lol. implement pighidra into the mix. issue: tried to integrate, but running into some issues. probably lower on the priority list to implement. 11.03.2025 Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to RCA &#43; LLM &#43; Binaries research progress" href="http://localhost:1313/posts/bin-exp-ai-progress/"></a>
 </article>
     </main>

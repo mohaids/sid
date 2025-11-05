@@ -5,11 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts | Siddiq</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - Siddiq">
+<title>RCA &#43; LLM reserach issues | Siddiq</title>
+<meta name="keywords" content="research, issues">
+<meta name="description" content="here are the following issues currently in prod:
+[ ] canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
+- potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/posts/bin-exp-issues/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
@@ -18,8 +20,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bin-exp-issues/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +60,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -122,122 +123,32 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Posts
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">RCA &#43; LLM reserach issues
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>here are the following issues currently in prod:
-[ ] canary exists for a binary, but initial crash analysis doesn’t pick it out. - potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-11-04 19:43:23 -0500 EST'>November 4, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to RCA &#43; LLM reserach issues" href="http://localhost:1313/posts/bin-exp-issues/"></a>
-</article>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      RCA &#43; LLM reserach issues
+    </h1>
+    <div class="post-meta"><span title='2025-11-04 19:43:23 -0500 EST'>November 4, 2025</span>&nbsp;·&nbsp;1 min
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">RCA &#43; LLM &#43; Binaries research progress
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>11.04.2025 Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.
-So far, in terms of completion, haven’t quite met all the requirements.
-making the llm return a logical plan &#43; gdb commands, sending it to a helper llm to call tool calls. sending the results of the tool calls back to the master llm. issue: the gdb execution part isn’t quite working. testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate issue: need to actually do it, lol. implement pighidra into the mix. issue: tried to integrate, but running into some issues. probably lower on the priority list to implement. 11.03.2025 Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to RCA &#43; LLM &#43; Binaries research progress" href="http://localhost:1313/posts/bin-exp-ai-progress/"></a>
-</article>
+</div>
+  </header> 
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">RCA (Root Cause Analysis) of Binaries AI Research
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Early September I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I’m glad through happenstance I reached out.
-Background What is root-cause analysis, specifically of binaries?
-High-level overview Professor / Master Agent Student / Slave Agent(s) </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-11-01 19:17:45 -0400 EDT'>November 1, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to RCA (Root Cause Analysis) of Binaries AI Research" href="http://localhost:1313/posts/bin-exp-ai-research/"></a>
-</article>
+  <div class="post-content"><p>here are the following issues currently in prod:</p>
+<p>[ ] canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
+- potential solution: doing a <code>checksec</code> at the beginning and including that in the final json (<code>crash_data</code>). this will also include important information such as <code>PIE</code>.</p>
 
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/aws-saa-cover.png" alt="aws saa certification image">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AWS Certified Solutions Architect - Associate Exam Reflections
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Taking the AWS SAA-C03 exam what what I learned from it</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-08-04 10:49:24 -0400 EDT'>August 4, 2025</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to AWS Certified Solutions Architect - Associate Exam Reflections" href="http://localhost:1313/posts/aws-saa-c03-reflections/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">(AWS &#43; Selenium)-powered Insta Notifier
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Improvement: Using AWS &#43; Selenium and discord webhooks to get insta notifications discretely</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-07 12:32:06 -0400 EDT'>May 7, 2025</span>&nbsp;·&nbsp;0 min</footer>
-  <a class="entry-link" aria-label="post link to (AWS &#43; Selenium)-powered Insta Notifier" href="http://localhost:1313/posts/aws-powered-insta-notifier/"></a>
-</article>
 
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/insta-discrete-cover.png" alt="tampermonkey and discord cover image">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Discrete Insta Notifier
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Using tampermonkey and discord webhooks to get insta notifications discretely</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-04 11:59:16 -0400 EDT'>May 4, 2025</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to Discrete Insta Notifier" href="http://localhost:1313/posts/discrete-insta-notifier/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/rpi-cyberseed.jpg" alt="ctf team image">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">UCONN CyberSEED 2025 Retrospective
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Couple of insights from the CTF</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:21 -0400 EDT'>March 9, 2025</span>&nbsp;·&nbsp;3 min</footer>
-  <a class="entry-link" aria-label="post link to UCONN CyberSEED 2025 Retrospective" href="http://localhost:1313/posts/cyberseed-retro/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/aws-cover.png" alt="aws certification image">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AWS Cloud Practioner Experience
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Taking the AWS CLF exam what what I learned from it</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-11 00:02:50 -0500 EST'>January 11, 2025</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to AWS Cloud Practioner Experience" href="http://localhost:1313/posts/aws-clf02-experience/"></a>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
+      <li><a href="http://localhost:1313/tags/issues/">Issues</a></li>
+    </ul>
+  </footer>
 </article>
     </main>
     

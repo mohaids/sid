@@ -7,26 +7,28 @@
 <meta name="robots" content="noindex, nofollow">
 <title>RCA &#43; LLM &#43; Binaries research progress | Siddiq</title>
 <meta name="keywords" content="research, progress">
-<meta name="description" content="11.02.2025
-3 main issus I need to fix:
+<meta name="description" content="11.04.2025
+Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.
+So far, in terms of completion, haven&rsquo;t quite met all the requirements.
 
-making llm return a logical plan, along with tool calls?
+ making the llm return a logical plan &#43; gdb commands, sending it to a helper llm to call tool calls. sending the results of the tool calls back to the master llm.
 
-extract said tool calls, run them in a single persistent session
-send it back to llm, create loop of this
-
-
-test with harder ctf challenge
-integrate pighidra
+issue: the gdb execution part isn&rsquo;t quite working.
 
 
-interesting observation(s):
+ testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
 
-hallucination of tool calls - in the time when i didn&rsquo;t include tool calls in the message i sent the llm, it hallucinated a tool call instead 😭. to be specific, it talk about there being a run_gdb tool call, but it never existed?
-highly inconsistent responses. when i ran the llm with tool calls, it usually doesn&rsquo;t provide detailed reasoning, however, one time it did, and i was overjoyed. but that only happened once, and its back to just calling tools. or shall i say, a single fucking tool, instead of the multiple it was seemingly instructed to do.
+issue: need to actually do it, lol.
 
-hypothesis:
-perhaps these issues with the llm only giving one tool call can be solved by asking it to give the gdb commands, extract them commands, send it to a helper llm that can convert the gdb commands to the tool calls, then give back the tool calls, which i will then execute in the gdbmanager session. then append those results back to messages. then call the main llm again asking if it either wants to create the rca report now that it has all the necessary information, or if it wants to continue to investigate. if it wants to continue to investigate, then do the same process over again.">
+
+ implement pighidra into the mix.
+
+issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.
+
+
+
+11.03.2025
+Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/bin-exp-ai-progress/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -148,12 +150,35 @@ perhaps these issues with the llm only giving one tool call can be solved by ask
     <h1 class="post-title entry-hint-parent">
       RCA &#43; LLM &#43; Binaries research progress
     </h1>
-    <div class="post-meta"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
 
-  <div class="post-content"><p><strong>11.02.2025</strong>
+  <div class="post-content"><p><strong>11.04.2025</strong>
+Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.</p>
+<p>So far, in terms of completion, haven&rsquo;t quite met all the requirements.</p>
+<ul>
+<li><input disabled="" type="checkbox"> making the llm return a logical plan + gdb commands, sending it to a helper llm to call <code>tool calls</code>. sending the results of the <code>tool calls</code> back to the master llm.
+<ul>
+<li>issue: the gdb execution part isn&rsquo;t quite working.</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
+<ul>
+<li>issue: need to actually do it, lol.</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> implement pighidra into the mix.
+<ul>
+<li>issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.</li>
+</ul>
+</li>
+</ul>
+<p><strong>11.03.2025</strong>
+Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭</p>
+<p>Tried to understand another challenge, successfully did so. Took a while to create the .poc file. Tested it, it crashed, ran initial <code>crash context gathering</code> function.</p>
+<p><strong>11.02.2025</strong>
 3 main issus I need to fix:</p>
 <ol>
 <li>making llm return a logical plan, along with tool calls?
