@@ -6,6 +6,18 @@ ShowToc = true
 tags = ["research", "progress"]
 +++
 
+**11.09.2025**
+
+**11.08.2025**
+tldr: pain.
+
+**11.05.2025** - Meeting day
+Main points:
+1. Instead of using this convoluted: master_llm's raw gdb commands + tool_call -> helper llm, which will then reutrn the correct tool_calls, and then the system running the gdb commands. I should instead just ask master_llm to give me the `gdb` commands straight up - like originally done.
+2. Also - somehow I lose the notes?? Don't really know what Obsidian did to them.
+3. Need to create persistent GDB session.
+4. Please, the whole loop must work.
+
 **11.04.2025**
 Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is. 
 
