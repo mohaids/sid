@@ -7,28 +7,15 @@
 <meta name="robots" content="noindex, nofollow">
 <title>RCA &#43; LLM &#43; Binaries research progress | Siddiq</title>
 <meta name="keywords" content="research, progress">
-<meta name="description" content="11.04.2025
-Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.
-So far, in terms of completion, haven&rsquo;t quite met all the requirements.
-
- making the llm return a logical plan &#43; gdb commands, sending it to a helper llm to call tool calls. sending the results of the tool calls back to the master llm.
-
-issue: the gdb execution part isn&rsquo;t quite working.
-
-
- testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
-
-issue: need to actually do it, lol.
-
-
- implement pighidra into the mix.
-
-issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.
-
-
-
-11.03.2025
-Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭">
+<meta name="description" content="11.09.2025
+Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
+Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about.
+Task 3: Integrate pighidra
+Task 4: Integrate checksec
+11.08.2025
+tldr: pain.
+11.05.2025 - Meeting day
+Main points:">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/bin-exp-ai-progress/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -150,12 +137,27 @@ Just pain - went down a rabbit hole in figuring out how a HTB challenge was solv
     <h1 class="post-title entry-hint-parent">
       RCA &#43; LLM &#43; Binaries research progress
     </h1>
-    <div class="post-meta"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;4 min
 
 </div>
   </header> 
 
-  <div class="post-content"><p><strong>11.04.2025</strong>
+  <div class="post-content"><p><strong>11.09.2025</strong>
+Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
+Task 2: Refactor the code, such that you just use the <code>master_llm</code> to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the <code>master_llm</code> has a smaller context to worry about.
+Task 3: Integrate pighidra
+Task 4: Integrate <code>checksec</code></p>
+<p><strong>11.08.2025</strong>
+tldr: pain.</p>
+<p><strong>11.05.2025</strong> - Meeting day
+Main points:</p>
+<ol>
+<li>Instead of using this convoluted: master_llm&rsquo;s raw gdb commands + tool_call -&gt; helper llm, which will then reutrn the correct tool_calls, and then the system running the gdb commands. I should instead just ask master_llm to give me the <code>gdb</code> commands straight up - like originally done.</li>
+<li>Also - somehow I lose the notes?? Don&rsquo;t really know what Obsidian did to them.</li>
+<li>Need to create persistent GDB session.</li>
+<li>Please, the whole loop must work.</li>
+</ol>
+<p><strong>11.04.2025</strong>
 Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.</p>
 <p>So far, in terms of completion, haven&rsquo;t quite met all the requirements.</p>
 <ul>
@@ -166,7 +168,7 @@ Need to run it through the LLM. Need to decipher whether or not the investigativ
 </li>
 <li><input disabled="" type="checkbox"> testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
 <ul>
-<li>issue: need to actually do it, lol.</li>
+<li>issue: did it, seems to work overall. however, would be greatly beneficial if source code is added.</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"> implement pighidra into the mix.
@@ -176,7 +178,7 @@ Need to run it through the LLM. Need to decipher whether or not the investigativ
 </li>
 </ul>
 <p><strong>11.03.2025</strong>
-Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭</p>
+Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc files was not included 😭</p>
 <p>Tried to understand another challenge, successfully did so. Took a while to create the .poc file. Tested it, it crashed, ran initial <code>crash context gathering</code> function.</p>
 <p><strong>11.02.2025</strong>
 3 main issus I need to fix:</p>

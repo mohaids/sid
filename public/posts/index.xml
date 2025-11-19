@@ -6,51 +6,59 @@
     <description>Recent content in Posts on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Nov 2025 19:43:23 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 18 Nov 2025 17:50:46 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Almost Complete: RPI Lally Calendar Page</title>
+      <link>http://localhost:1313/posts/small-win/</link>
+      <pubDate>Tue, 18 Nov 2025 17:50:46 -0500</pubDate>
+      <guid>http://localhost:1313/posts/small-win/</guid>
+      <description>Taking initiative and creating the events calendar page for Lally School of Management</description>
+    </item>
     <item>
       <title>RCA &#43; LLM reserach issues</title>
       <link>http://localhost:1313/posts/bin-exp-issues/</link>
       <pubDate>Tue, 04 Nov 2025 19:43:23 -0500</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-issues/</guid>
       <description>&lt;p&gt;here are the following issues currently in prod:&lt;/p&gt;
-&lt;p&gt;[ ] canary exists for a binary, but initial crash analysis doesn&amp;rsquo;t pick it out.
-- potential solution: doing a &lt;code&gt;checksec&lt;/code&gt; at the beginning and including that in the final json (&lt;code&gt;crash_data&lt;/code&gt;). this will also include important information such as &lt;code&gt;PIE&lt;/code&gt;.&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; canary exists for a binary, but initial crash analysis doesn&amp;rsquo;t pick it out.
+&lt;ul&gt;
+&lt;li&gt;potential solution: doing a &lt;code&gt;checksec&lt;/code&gt; at the beginning and including that in the final json (&lt;code&gt;crash_data&lt;/code&gt;). this will also include important information such as &lt;code&gt;PIE&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;feature requests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; disassembly - pighidra&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; source code integration - sending in the C code to the llm
+&lt;ul&gt;
+&lt;li&gt;this would be useful for things like figuring out if &lt;code&gt;alloca&lt;/code&gt; exists (contractor binary)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>RCA &#43; LLM &#43; Binaries research progress</title>
       <link>http://localhost:1313/posts/bin-exp-ai-progress/</link>
       <pubDate>Sun, 02 Nov 2025 12:33:42 -0500</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-progress/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;11.04.2025&lt;/strong&gt;
-Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.&lt;/p&gt;
-&lt;p&gt;So far, in terms of completion, haven&amp;rsquo;t quite met all the requirements.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; making the llm return a logical plan + gdb commands, sending it to a helper llm to call &lt;code&gt;tool calls&lt;/code&gt;. sending the results of the &lt;code&gt;tool calls&lt;/code&gt; back to the master llm.
-&lt;ul&gt;
-&lt;li&gt;issue: the gdb execution part isn&amp;rsquo;t quite working.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
-&lt;ul&gt;
-&lt;li&gt;issue: need to actually do it, lol.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; implement pighidra into the mix.
-&lt;ul&gt;
-&lt;li&gt;issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;11.03.2025&lt;/strong&gt;
-Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;11.09.2025&lt;/strong&gt;
+Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
+Task 2: Refactor the code, such that you just use the &lt;code&gt;master_llm&lt;/code&gt; to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the &lt;code&gt;master_llm&lt;/code&gt; has a smaller context to worry about.
+Task 3: Integrate pighidra
+Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;11.08.2025&lt;/strong&gt;
+tldr: pain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;11.05.2025&lt;/strong&gt; - Meeting day
+Main points:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RCA (Root Cause Analysis) of Binaries AI Research</title>
       <link>http://localhost:1313/posts/bin-exp-ai-research/</link>
       <pubDate>Sat, 01 Nov 2025 19:17:45 -0400</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-research/</guid>
-      <description>&lt;p&gt;Early September I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
+      <description>&lt;p&gt;It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
 &lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;What is root-cause analysis, specifically of binaries?&lt;/p&gt;

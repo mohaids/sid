@@ -8,8 +8,22 @@
 <title>RCA &#43; LLM reserach issues | Siddiq</title>
 <meta name="keywords" content="research, issues">
 <meta name="description" content="here are the following issues currently in prod:
-[ ] canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
-- potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE.">
+
+ canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
+
+potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE.
+
+
+
+feature requests:
+
+ disassembly - pighidra
+ source code integration - sending in the C code to the llm
+
+this would be useful for things like figuring out if alloca exists (contractor binary)
+
+
+">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/bin-exp-issues/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -137,8 +151,22 @@
   </header> 
 
   <div class="post-content"><p>here are the following issues currently in prod:</p>
-<p>[ ] canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
-- potential solution: doing a <code>checksec</code> at the beginning and including that in the final json (<code>crash_data</code>). this will also include important information such as <code>PIE</code>.</p>
+<ul>
+<li><input disabled="" type="checkbox"> canary exists for a binary, but initial crash analysis doesn&rsquo;t pick it out.
+<ul>
+<li>potential solution: doing a <code>checksec</code> at the beginning and including that in the final json (<code>crash_data</code>). this will also include important information such as <code>PIE</code>.</li>
+</ul>
+</li>
+</ul>
+<p>feature requests:</p>
+<ul>
+<li><input disabled="" type="checkbox"> disassembly - pighidra</li>
+<li><input disabled="" type="checkbox"> source code integration - sending in the C code to the llm
+<ul>
+<li>this would be useful for things like figuring out if <code>alloca</code> exists (contractor binary)</li>
+</ul>
+</li>
+</ul>
 
 
   </div>

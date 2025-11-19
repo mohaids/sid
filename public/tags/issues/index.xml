@@ -14,8 +14,22 @@
       <pubDate>Tue, 04 Nov 2025 19:43:23 -0500</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-issues/</guid>
       <description>&lt;p&gt;here are the following issues currently in prod:&lt;/p&gt;
-&lt;p&gt;[ ] canary exists for a binary, but initial crash analysis doesn&amp;rsquo;t pick it out.
-- potential solution: doing a &lt;code&gt;checksec&lt;/code&gt; at the beginning and including that in the final json (&lt;code&gt;crash_data&lt;/code&gt;). this will also include important information such as &lt;code&gt;PIE&lt;/code&gt;.&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; canary exists for a binary, but initial crash analysis doesn&amp;rsquo;t pick it out.
+&lt;ul&gt;
+&lt;li&gt;potential solution: doing a &lt;code&gt;checksec&lt;/code&gt; at the beginning and including that in the final json (&lt;code&gt;crash_data&lt;/code&gt;). this will also include important information such as &lt;code&gt;PIE&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;feature requests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; disassembly - pighidra&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; source code integration - sending in the C code to the llm
+&lt;ul&gt;
+&lt;li&gt;this would be useful for things like figuring out if &lt;code&gt;alloca&lt;/code&gt; exists (contractor binary)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

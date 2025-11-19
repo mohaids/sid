@@ -131,13 +131,25 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Almost Complete: RPI Lally Calendar Page
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Taking initiative and creating the events calendar page for Lally School of Management</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-11-18 17:50:46 -0500 EST'>November 18, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Almost Complete: RPI Lally Calendar Page" href="http://localhost:1313/posts/small-win/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">RCA &#43; LLM reserach issues
     </h2>
   </header>
   <div class="entry-content">
     <p>here are the following issues currently in prod:
-[ ] canary exists for a binary, but initial crash analysis doesn’t pick it out. - potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE.
-</p>
+canary exists for a binary, but initial crash analysis doesn’t pick it out. potential solution: doing a checksec at the beginning and including that in the final json (crash_data). this will also include important information such as PIE. feature requests:
+disassembly - pighidra source code integration - sending in the C code to the llm this would be useful for things like figuring out if alloca exists (contractor binary) </p>
   </div>
   <footer class="entry-footer"><span title='2025-11-04 19:43:23 -0500 EST'>November 4, 2025</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to RCA &#43; LLM reserach issues" href="http://localhost:1313/posts/bin-exp-issues/"></a>
@@ -149,12 +161,12 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>11.04.2025 Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.
-So far, in terms of completion, haven’t quite met all the requirements.
-making the llm return a logical plan &#43; gdb commands, sending it to a helper llm to call tool calls. sending the results of the tool calls back to the master llm. issue: the gdb execution part isn’t quite working. testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate issue: need to actually do it, lol. implement pighidra into the mix. issue: tried to integrate, but running into some issues. probably lower on the priority list to implement. 11.03.2025 Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc file was not included 😭
+    <p>11.09.2025 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up. Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about. Task 3: Integrate pighidra Task 4: Integrate checksec
+11.08.2025 tldr: pain.
+11.05.2025 - Meeting day Main points:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;3 min</footer>
+  <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to RCA &#43; LLM &#43; Binaries research progress" href="http://localhost:1313/posts/bin-exp-ai-progress/"></a>
 </article>
 
@@ -164,7 +176,7 @@ making the llm return a logical plan &#43; gdb commands, sending it to a helper 
     </h2>
   </header>
   <div class="entry-content">
-    <p>Early September I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I’m glad through happenstance I reached out.
+    <p>It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I’m glad through happenstance I reached out.
 Background What is root-cause analysis, specifically of binaries?
 High-level overview Professor / Master Agent Student / Slave Agent(s) </p>
   </div>

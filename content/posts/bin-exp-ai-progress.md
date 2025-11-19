@@ -7,6 +7,10 @@ tags = ["research", "progress"]
 +++
 
 **11.09.2025**
+Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
+Task 2: Refactor the code, such that you just use the `master_llm` to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the `master_llm` has a smaller context to worry about.
+Task 3: Integrate pighidra
+Task 4: Integrate `checksec`
 
 **11.08.2025**
 tldr: pain.
