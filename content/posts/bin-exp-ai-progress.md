@@ -9,6 +9,12 @@ tags = ["research", "progress"]
 **11.27.2025**
 Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.
 
+Take-aways:
+1. The AI provides a high-level overview of ./contractor which is good. However, doesn't get into the nitty-gritty of how exactly its solved. 
+- What I'm thinking to solve this:
+    - Summarize GDB outputs / summarize the last 5 iterations.
+    - Need to include pighidra to get C code in order to make RCA faster.
+
 **11.09.2025**
 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
 Task 2: Refactor the code, such that you just use the `master_llm` to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the `master_llm` has a smaller context to worry about.
