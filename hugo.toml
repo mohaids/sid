@@ -16,6 +16,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = "/project-updates/"
     weight = 17
   [[menu.main]]
+    identifier = "philanthropy-work"
+    name = "Philanthropy Work"
+    url = /philanthropy-work/"
+    weight = 20
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
