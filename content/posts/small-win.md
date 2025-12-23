@@ -25,7 +25,7 @@ This wasn't too technical in nature. Lally's website uses Drupal, and I was reco
 
 I eventually found a widget I thought wasn't bad, connected it to my alt Google Calendar, populated events, and saw it reflected in the widget. Experimented with photos in the events, and found it to look good enough.
 
-![calendar view](calendar-site-view.png)
+![calendar view](/calendar-site-view.png)
 
 # Future Plans
 1. In order to ensure there is no visual hole 😉:
