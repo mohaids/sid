@@ -9,7 +9,7 @@ Showtoc = true
 # Introduction
 It was October 28th when I pitched the idea of having a event's calendar page to my favorite RPI admin - Jackie Balcerak.
 
-Objective: I literally just needed one place that would hold all the events happening at Lally. There was this one particular week that so many things were happening I was so confused. It was particularly busy such that Jackie had to send an email detailing everythiing.
+Objective: I literally just needed one place that would hold all the events happening at Lally. There was this one particular week that so many things were happening I was so confused. It was particularly busy such that Jackie had to send an email detailing everything.
 
 # Timeline
 10/28 - Jackie put me in contact with Lynda
@@ -23,7 +23,16 @@ Objective: I literally just needed one place that would hold all the events happ
 # Technologies Used
 This wasn't too technical in nature. Lally's website uses Drupal, and I was recommended that instead of building a solution from the group up, [elfsight.com](https://www.elfsight.com) has widgets to solve this. So I began exploring.
 
-I eventually found a widget I thought wasn't bad, connected it to my alt Google Calendar, populated events, and saw it reflected in the widget. Experimented with photos in the events, and found it to look good.
+I eventually found a widget I thought wasn't bad, connected it to my alt Google Calendar, populated events, and saw it reflected in the widget. Experimented with photos in the events, and found it to look good enough.
+
+![calendar view](/static/calendar-site-view.png)
+
+# Future Plans
+1. In order to ensure there is no visual hole 😉:
+- Find a better widget on [elfsight.com](https://www.elfsight.com)
+- Create a custom calendar solution
+
+2. Create seamless Google Form -> Google Calendar -> Updating Widget workflow
 
 # Take-away
 While this project wasn't particularly technical, the key idea is talking about your ideas to your champions and explaining your thought process behind them.
