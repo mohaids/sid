@@ -5,7 +5,7 @@ title = 'Almost Complete: RPI Lally Calendar Page'
 summary = "Taking initiative and creating the events calendar page for Lally School of Management"
 Showtoc = true
 [cover]
-image = "/lally-events-calendar.png"
+image = "/new-events-calendar.png"
 alt = "ai generated image"
 relative = false
 +++
