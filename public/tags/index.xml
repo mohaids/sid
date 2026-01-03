@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Nov 2025 19:43:23 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 19:31:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/tags/personal/</link>
+      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
+      <guid>http://localhost:1313/tags/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retrospective</title>
+      <link>http://localhost:1313/tags/retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
+      <guid>http://localhost:1313/tags/retrospective/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Issues</title>
       <link>http://localhost:1313/tags/issues/</link>
@@ -41,13 +55,6 @@
       <link>http://localhost:1313/tags/%EF%B8%8F-cloud/</link>
       <pubDate>Mon, 04 Aug 2025 10:49:24 -0400</pubDate>
       <guid>http://localhost:1313/tags/%EF%B8%8F-cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Personal</title>
-      <link>http://localhost:1313/tags/personal/</link>
-      <pubDate>Mon, 04 Aug 2025 10:49:24 -0400</pubDate>
-      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>

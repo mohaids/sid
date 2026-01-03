@@ -6,8 +6,29 @@
     <description>Recent content on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Nov 2025 17:50:46 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 19:31:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 2025 Retrospective</title>
+      <link>http://localhost:1313/posts/2025-retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025-retrospective/</guid>
+      <description>A look back at my year in cybersecurity.</description>
+    </item>
+    <item>
+      <title>Philanthropy Work</title>
+      <link>http://localhost:1313/philanthropy-work/</link>
+      <pubDate>Mon, 22 Dec 2025 19:05:22 -0500</pubDate>
+      <guid>http://localhost:1313/philanthropy-work/</guid>
+      <description>&lt;h2 id=&#34;american-red-cross&#34;&gt;American Red Cross&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Interview scheduled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;troy-fire-department&#34;&gt;Troy Fire Department&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Going to look into it in the New Year&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Almost Complete: RPI Lally Calendar Page</title>
       <link>http://localhost:1313/posts/small-win/</link>
@@ -43,15 +64,25 @@
       <link>http://localhost:1313/posts/bin-exp-ai-progress/</link>
       <pubDate>Sun, 02 Nov 2025 12:33:42 -0500</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-progress/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;11.09.2025&lt;/strong&gt;
+      <description>&lt;p&gt;&lt;strong&gt;11.27.2025&lt;/strong&gt;
+Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.&lt;/p&gt;
+&lt;p&gt;Take-aways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The AI provides a high-level overview of ./contractor which is good. However, doesn&amp;rsquo;t get into the nitty-gritty of how exactly its solved.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;What I&amp;rsquo;m thinking to solve this:
+&lt;ul&gt;
+&lt;li&gt;Summarize GDB outputs / summarize the last 5 iterations.&lt;/li&gt;
+&lt;li&gt;Need to include pighidra to get C code in order to make RCA faster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;11.09.2025&lt;/strong&gt;
 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
 Task 2: Refactor the code, such that you just use the &lt;code&gt;master_llm&lt;/code&gt; to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the &lt;code&gt;master_llm&lt;/code&gt; has a smaller context to worry about.
 Task 3: Integrate pighidra
-Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;11.08.2025&lt;/strong&gt;
-tldr: pain.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;11.05.2025&lt;/strong&gt; - Meeting day
-Main points:&lt;/p&gt;</description>
+Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>RCA (Root Cause Analysis) of Binaries AI Research</title>

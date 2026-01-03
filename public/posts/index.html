@@ -119,6 +119,11 @@
                     <span>Project Updates</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/philanthropy-work/" title="Philanthropy Work">
+                    <span>Philanthropy Work</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -130,6 +135,22 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/2025-cover.png" alt="2025 image">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The 2025 Retrospective
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A look back at my year in cybersecurity.</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-22 19:31:38 -0500 EST'>December 22, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to The 2025 Retrospective" href="http://localhost:1313/posts/2025-retrospective/"></a>
+</article>
+
+<article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/new-events-calendar.png" alt="ai generated image">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">Almost Complete: RPI Lally Calendar Page
     </h2>
@@ -161,9 +182,9 @@ disassembly - pighidra source code integration - sending in the C code to the ll
     </h2>
   </header>
   <div class="entry-content">
-    <p>11.09.2025 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up. Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about. Task 3: Integrate pighidra Task 4: Integrate checksec
-11.08.2025 tldr: pain.
-11.05.2025 - Meeting day Main points:
+    <p>11.27.2025 Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.
+Take-aways:
+The AI provides a high-level overview of ./contractor which is good. However, doesn’t get into the nitty-gritty of how exactly its solved. What I’m thinking to solve this: Summarize GDB outputs / summarize the last 5 iterations. Need to include pighidra to get C code in order to make RCA faster. 11.09.2025 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up. Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about. Task 3: Integrate pighidra Task 4: Integrate checksec
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;4 min</footer>

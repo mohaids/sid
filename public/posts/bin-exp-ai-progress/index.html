@@ -7,15 +7,25 @@
 <meta name="robots" content="noindex, nofollow">
 <title>RCA &#43; LLM &#43; Binaries research progress | Siddiq</title>
 <meta name="keywords" content="research, progress">
-<meta name="description" content="11.09.2025
+<meta name="description" content="11.27.2025
+Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.
+Take-aways:
+
+The AI provides a high-level overview of ./contractor which is good. However, doesn&rsquo;t get into the nitty-gritty of how exactly its solved.
+
+
+What I&rsquo;m thinking to solve this:
+
+Summarize GDB outputs / summarize the last 5 iterations.
+Need to include pighidra to get C code in order to make RCA faster.
+
+
+
+11.09.2025
 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
 Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about.
 Task 3: Integrate pighidra
-Task 4: Integrate checksec
-11.08.2025
-tldr: pain.
-11.05.2025 - Meeting day
-Main points:">
+Task 4: Integrate checksec">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/bin-exp-ai-progress/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -126,6 +136,11 @@ Main points:">
                     <span>Project Updates</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/philanthropy-work/" title="Philanthropy Work">
+                    <span>Philanthropy Work</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -142,7 +157,21 @@ Main points:">
 </div>
   </header> 
 
-  <div class="post-content"><p><strong>11.09.2025</strong>
+  <div class="post-content"><p><strong>11.27.2025</strong>
+Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.</p>
+<p>Take-aways:</p>
+<ol>
+<li>The AI provides a high-level overview of ./contractor which is good. However, doesn&rsquo;t get into the nitty-gritty of how exactly its solved.</li>
+</ol>
+<ul>
+<li>What I&rsquo;m thinking to solve this:
+<ul>
+<li>Summarize GDB outputs / summarize the last 5 iterations.</li>
+<li>Need to include pighidra to get C code in order to make RCA faster.</li>
+</ul>
+</li>
+</ul>
+<p><strong>11.09.2025</strong>
 Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
 Task 2: Refactor the code, such that you just use the <code>master_llm</code> to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the <code>master_llm</code> has a smaller context to worry about.
 Task 3: Integrate pighidra

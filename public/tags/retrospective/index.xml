@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>🧠Retrospective on Siddiq</title>
+    <title>Retrospective on Siddiq</title>
     <link>http://localhost:1313/tags/retrospective/</link>
-    <description>Recent content in 🧠Retrospective on Siddiq</description>
+    <description>Recent content in Retrospective on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2024 11:32:02 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 19:31:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/retrospective/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024 Retrospective</title>
-      <link>http://localhost:1313/posts/2024-retrospective/</link>
-      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024-retrospective/</guid>
-      <description>A look back at the 2024 season</description>
+      <title>The 2025 Retrospective</title>
+      <link>http://localhost:1313/posts/2025-retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025-retrospective/</guid>
+      <description>A look back at my year in cybersecurity.</description>
     </item>
   </channel>
 </rss>
