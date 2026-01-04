@@ -12,13 +12,27 @@ It was early September, when I reached out to Professor Yener expressing my inte
 Given a binary, is it possible to create a RCA (Root Cause Analysis) of a binary, given a PoC (Proof of Concept)
 
 # Necessary Background Definitions
-First, what does RCA even mean? RCA, also known as Root Cause Analysis, is a consise report of why a system encountered an issue. In this research, the system will be a binary, and the issue will be a crash triggered by a PoC. This PoC will be either static, in the form of a `.poc` file, or it'll be dynamic, in form of a `.py` file. Ideally, for a closed-loop, better system, 
+First, what does RCA even mean? 
+
+RCA, also known as Root Cause Analysis, is a consise report of why a system encountered an issue. In this research, the system will be a binary, and the issue will be a crash triggered by a PoC. This PoC will be either static, in the form of a `.poc` file, or it'll be dynamic, in form of a `.py` file. Ideally, for a closed-loop, better system, 
 
 
 # Background
 > What is root-cause analysis, specifically of binaries?
 
 # Cursory Research
+During the initial weeks, Patrick invited me to perform some cursory research on the current state of LLMs creating RCAs. At first, I tried to search for papers that were directly `RCA + LLMs + binary exploitation`. However, after turning empty-handed, I expanded my search to any `RCA + LLM` paper. Using [arXiv](https://arxiv.org/), I found two papers that caught my eye:
+1. RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models
+2. ChatDBG: Augmenting Debugging with Large Language Models
+
+## Paper 1: RCAgent
+
+
+
+### Understanding TSC Aggregation
+
+## Paper 2: ChatDBG
+
 
 
 
@@ -50,7 +64,7 @@ First, what does RCA even mean? RCA, also known as Root Cause Analysis, is a con
 
 
 
-# Future Steps
+# What's for Future
 
 
 
