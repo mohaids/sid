@@ -26,7 +26,11 @@ During the initial weeks, Patrick invited me to perform some cursory research on
 2. ChatDBG: Augmenting Debugging with Large Language Models
 
 ## Paper 1: RCAgent
+This paper pertains to RCA and LLMs in cloud systems - specifically Alibaba cloud. This paper comes up with a `RCAgent`, a "tool-augmented LLM autonomous agent framework". What makes it different than the typical `ReAct` agent? RCAgent employes a few key upgrades:
+1. self-Consistency for action trajectories
+2. a suite of tools utilized for context management
 
+![rcagent overview pic](/rcagent-overview.png)
 
 
 ### Understanding TSC Aggregation
@@ -42,7 +46,7 @@ During the initial weeks, Patrick invited me to perform some cursory research on
 
 # Iteration 1: The Sanity Check
 
-
+![iteration-one-also-known-as-the-sanity-check](/iter1.png)
 
 
 # Iteration 2: Attempt At Future-Proofing
