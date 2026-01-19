@@ -6,6 +6,8 @@ ShowToc = true
 tags = ["research", "binary exploitation"]
 +++
 
+# Still a WIP (Work - In - Progress)
+
 It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I'm glad through happenstance I reached out.
 
 # Objective

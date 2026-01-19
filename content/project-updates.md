@@ -4,6 +4,12 @@ draft = false
 title = 'Project Updates'
 +++
 
+### 1.19.26
+Started new project - to clone lifeofdiscipline.com. Currently using React + Vite + Supabase. Chose Supabase for easy user management.
+
+### 8.3
+Passed SAA-03!
+
 ### 7.26
 Finished S3 + CloudFront + Global Accelerator
 
