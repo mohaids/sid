@@ -1,0 +1,23 @@
+.highlight-yellow {
+  background-color: #fff3b0;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+}
+
+.highlight-blue {
+  background-color: #cfe8ff;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+}
+
+.highlight-green {
+  background-color: #d4f8d4;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+}
+
+.highlight-red {
+  background-color: #ffd6d6;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+}

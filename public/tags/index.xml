@@ -23,6 +23,13 @@
       <description></description>
     </item>
     <item>
+      <title>☁️ Cloud</title>
+      <link>http://localhost:1313/tags/%EF%B8%8F-cloud/</link>
+      <pubDate>Mon, 22 Dec 2025 15:55:11 -0500</pubDate>
+      <guid>http://localhost:1313/tags/%EF%B8%8F-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Issues</title>
       <link>http://localhost:1313/tags/issues/</link>
       <pubDate>Tue, 04 Nov 2025 19:43:23 -0500</pubDate>
@@ -51,13 +58,6 @@
       <description></description>
     </item>
     <item>
-      <title>☁️ Cloud</title>
-      <link>http://localhost:1313/tags/%EF%B8%8F-cloud/</link>
-      <pubDate>Mon, 04 Aug 2025 10:49:24 -0400</pubDate>
-      <guid>http://localhost:1313/tags/%EF%B8%8F-cloud/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>🎉 Projects</title>
       <link>http://localhost:1313/tags/-projects/</link>
       <pubDate>Wed, 07 May 2025 12:32:06 -0400</pubDate>
@@ -69,6 +69,20 @@
       <link>http://localhost:1313/tags/-competition/</link>
       <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
       <guid>http://localhost:1313/tags/-competition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>🔄Meta</title>
+      <link>http://localhost:1313/tags/meta/</link>
+      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
+      <guid>http://localhost:1313/tags/meta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>🧠Retrospective</title>
+      <link>http://localhost:1313/tags/retrospective/</link>
+      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
+      <guid>http://localhost:1313/tags/retrospective/</guid>
       <description></description>
     </item>
     <item>

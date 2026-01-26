@@ -10,24 +10,35 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The 2025 Retrospective</title>
-      <link>http://localhost:1313/posts/2025-retrospective/</link>
+      <link>http://localhost:1313/posts/draft-2025-retrospective/</link>
       <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2025-retrospective/</guid>
-      <description>A look back at my year in cybersecurity.</description>
+      <guid>http://localhost:1313/posts/draft-2025-retrospective/</guid>
+      <description>A look back at my year academically.</description>
     </item>
     <item>
       <title>Philanthropy Work</title>
       <link>http://localhost:1313/philanthropy-work/</link>
       <pubDate>Mon, 22 Dec 2025 19:05:22 -0500</pubDate>
       <guid>http://localhost:1313/philanthropy-work/</guid>
-      <description>&lt;h2 id=&#34;american-red-cross&#34;&gt;American Red Cross&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;the-acacia-fraternity&#34;&gt;The Acacia Fraternity&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Interview scheduled&lt;/li&gt;
+&lt;li&gt;Parlimentarian Chair: Host the soul of Pythagoras within my mortal coil.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;american-red-cross&#34;&gt;American Red Cross&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decided it wasn&amp;rsquo;t a good fit. They were seeking out more Data Science roles - not necessarily my cup of tea.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;troy-fire-department&#34;&gt;Troy Fire Department&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Going to look into it in the New Year&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>AWS Security Specialty Reflections</title>
+      <link>http://localhost:1313/posts/draft-aws-security-specialty/</link>
+      <pubDate>Mon, 22 Dec 2025 15:55:11 -0500</pubDate>
+      <guid>http://localhost:1313/posts/draft-aws-security-specialty/</guid>
+      <description>Taking the AWS SCS-02 exam and what I learned from it</description>
     </item>
     <item>
       <title>Almost Complete: RPI Lally Calendar Page</title>
@@ -89,16 +100,12 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <link>http://localhost:1313/posts/bin-exp-ai-research/</link>
       <pubDate>Sat, 01 Nov 2025 19:17:45 -0400</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-research/</guid>
-      <description>&lt;p&gt;It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;still-a-wip-work---in---progress&#34;&gt;Still a WIP (Work - In - Progress)&lt;/h1&gt;
+&lt;p&gt;It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
+&lt;p&gt;Given a binary, is it possible to create a RCA (Root Cause Analysis) of a binary, given a PoC (Proof of Concept)&lt;/p&gt;
 &lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What is root-cause analysis, specifically of binaries?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;high-level-overview&#34;&gt;High-level overview&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Professor / Master Agent&lt;/li&gt;
-&lt;li&gt;Student   / Slave Agent(s)&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;First, what does RCA even mean?&lt;/p&gt;</description>
     </item>
     <item>
       <title>AWS Certified Solutions Architect - Associate Exam Reflections</title>
@@ -112,7 +119,11 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <link>http://localhost:1313/project-updates/</link>
       <pubDate>Sat, 21 Jun 2025 11:45:17 -0400</pubDate>
       <guid>http://localhost:1313/project-updates/</guid>
-      <description>&lt;h3 id=&#34;726&#34;&gt;7.26&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;11926&#34;&gt;1.19.26&lt;/h3&gt;
+&lt;p&gt;Started new project - to clone lifeofdiscipline.com. Currently using React + Vite + Supabase. Chose Supabase for easy user management.&lt;/p&gt;
+&lt;h3 id=&#34;83&#34;&gt;8.3&lt;/h3&gt;
+&lt;p&gt;Passed SAA-03!&lt;/p&gt;
+&lt;h3 id=&#34;726&#34;&gt;7.26&lt;/h3&gt;
 &lt;p&gt;Finished S3 + CloudFront + Global Accelerator&lt;/p&gt;
 &lt;h3 id=&#34;725&#34;&gt;7.25&lt;/h3&gt;
 &lt;p&gt;Studied more of SAA - went through S3&lt;/p&gt;
@@ -121,11 +132,7 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
 &lt;h3 id=&#34;721&#34;&gt;7.21&lt;/h3&gt;
 &lt;p&gt;Worked on school work and did some AWS-SAA studying&lt;/p&gt;
 &lt;h3 id=&#34;720&#34;&gt;7.20&lt;/h3&gt;
-&lt;p&gt;Took a day break to focus on Linux+ work&lt;/p&gt;
-&lt;h3 id=&#34;719&#34;&gt;7.19&lt;/h3&gt;
-&lt;p&gt;Need to create architecture diagram + study for Linux+&lt;/p&gt;
-&lt;h3 id=&#34;718&#34;&gt;7.18&lt;/h3&gt;
-&lt;p&gt;Uploaded image to ECR, stored cookies in S3, and created container instance on ECS - everythings working round the clock. Left it on since yesterday evening, checked it today noon, and it still functions!!&lt;/p&gt;</description>
+&lt;p&gt;Took a day break to focus on Linux+ work&lt;/p&gt;</description>
     </item>
     <item>
       <title>(AWS &#43; Selenium)-powered Insta Notifier</title>
@@ -142,6 +149,30 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <description>Using tampermonkey and discord webhooks to get insta notifications discretely</description>
     </item>
     <item>
+      <title>Running_log</title>
+      <link>http://localhost:1313/posts/running_log/</link>
+      <pubDate>Wed, 02 Apr 2025 14:05:31 -0400</pubDate>
+      <guid>http://localhost:1313/posts/running_log/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
+&lt;p&gt;The purpose of this specific blog is to create a public repository of all the tasks I&amp;rsquo;ve acheived in a day - and my plan is to continually update this blog and review my work on a day-to-day and week-to-week basis.&lt;/p&gt;
+&lt;h3 id=&#34;4-4-2025&#34;&gt;4-4-2025&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Mongoose project
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- NCL Gym - Password Cracking
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Small Items&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4-3-2025&#34;&gt;4-3-2025&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- FOCS HW 11 ✅
+- Web Sci Lab 5 ✅
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>UCONN CyberSEED 2025 Retrospective</title>
       <link>http://localhost:1313/posts/cyberseed-retro/</link>
       <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
@@ -154,6 +185,20 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <pubDate>Sat, 11 Jan 2025 00:02:50 -0500</pubDate>
       <guid>http://localhost:1313/posts/aws-clf02-experience/</guid>
       <description>Taking the AWS CLF exam what what I learned from it</description>
+    </item>
+    <item>
+      <title>2025 Plans</title>
+      <link>http://localhost:1313/posts/2025-plans/</link>
+      <pubDate>Wed, 01 Jan 2025 13:02:58 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025-plans/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Retrospective</title>
+      <link>http://localhost:1313/posts/2024-retrospective/</link>
+      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024-retrospective/</guid>
+      <description>A look back at the 2024 season</description>
     </item>
     <item>
       <title>Resumé</title>

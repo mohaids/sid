@@ -61,16 +61,12 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <link>http://localhost:1313/posts/bin-exp-ai-research/</link>
       <pubDate>Sat, 01 Nov 2025 19:17:45 -0400</pubDate>
       <guid>http://localhost:1313/posts/bin-exp-ai-research/</guid>
-      <description>&lt;p&gt;It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;still-a-wip-work---in---progress&#34;&gt;Still a WIP (Work - In - Progress)&lt;/h1&gt;
+&lt;p&gt;It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&amp;rsquo;m glad through happenstance I reached out.&lt;/p&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
+&lt;p&gt;Given a binary, is it possible to create a RCA (Root Cause Analysis) of a binary, given a PoC (Proof of Concept)&lt;/p&gt;
 &lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What is root-cause analysis, specifically of binaries?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;high-level-overview&#34;&gt;High-level overview&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Professor / Master Agent&lt;/li&gt;
-&lt;li&gt;Student   / Slave Agent(s)&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;First, what does RCA even mean?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

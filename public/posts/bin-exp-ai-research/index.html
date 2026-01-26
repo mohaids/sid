@@ -7,19 +7,15 @@
 <meta name="robots" content="noindex, nofollow">
 <title>RCA (Root Cause Analysis) of Binaries AI Research | Siddiq</title>
 <meta name="keywords" content="research, binary exploitation">
-<meta name="description" content="It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&rsquo;m glad through happenstance I reached out.
+<meta name="description" content="Still a WIP (Work - In - Progress)
+It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&rsquo;m glad through happenstance I reached out.
+Objective
+Given a binary, is it possible to create a RCA (Root Cause Analysis) of a binary, given a PoC (Proof of Concept)
 Background
-
-What is root-cause analysis, specifically of binaries?
-
-High-level overview
-
-Professor / Master Agent
-Student   / Slave Agent(s)
-">
+First, what does RCA even mean?">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/bin-exp-ai-research/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5efd82fd54051937bc3a4e3654b29e498eb5ed0fd8d7daf2e32916273ee676e5.css" integrity="sha256-Xv2C/VQFGTe8Ok42VLKeSY617Q/Y19ry4ykWJz7mduU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
@@ -143,7 +139,7 @@ Student   / Slave Agent(s)
     <h1 class="post-title entry-hint-parent">
       RCA (Root Cause Analysis) of Binaries AI Research
     </h1>
-    <div class="post-meta"><span title='2025-11-01 19:17:45 -0400 EDT'>November 1, 2025</span>&nbsp;·&nbsp;1 min
+    <div class="post-meta"><span title='2025-11-01 19:17:45 -0400 EDT'>November 1, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> <div class="toc">
@@ -154,7 +150,43 @@ Student   / Slave Agent(s)
 
         <div class="inner"><ul>
                 <li>
+                    <a href="#still-a-wip-work---in---progress" aria-label="Still a WIP (Work - In - Progress)">Still a WIP (Work - In - Progress)</a></li>
+                <li>
+                    <a href="#objective" aria-label="Objective">Objective</a></li>
+                <li>
                     <a href="#background" aria-label="Background">Background</a></li>
+                <li>
+                    <a href="#cursory-research" aria-label="Cursory Research">Cursory Research</a><ul>
+                        
+                <li>
+                    <a href="#paper-1-rcagent" aria-label="Paper 1: RCAgent">Paper 1: RCAgent</a><ul>
+                        
+                <li>
+                    <a href="#understanding-different-performance-metrics" aria-label="Understanding Different Performance Metrics">Understanding Different Performance Metrics</a></li>
+                <li>
+                    <a href="#understanding-tsc-aggregation-in-detail" aria-label="Understanding TSC Aggregation in Detail">Understanding TSC Aggregation in Detail</a></li></ul>
+                </li>
+                <li>
+                    <a href="#paper-2-chatdbg" aria-label="Paper 2: ChatDBG">Paper 2: ChatDBG</a></li></ul>
+                </li>
+                <li>
+                    <a href="#creating-a-idealized-system-overview" aria-label="Creating A Idealized System Overview">Creating A Idealized System Overview</a></li>
+                <li>
+                    <a href="#iteration-1-the-sanity-check" aria-label="Iteration 1: The Sanity Check">Iteration 1: The Sanity Check</a></li>
+                <li>
+                    <a href="#iteration-2-attempt-at-future-proofing" aria-label="Iteration 2: Attempt At Future-Proofing">Iteration 2: Attempt At Future-Proofing</a></li>
+                <li>
+                    <a href="#iteration-3-the-unintentional-over-engineering" aria-label="Iteration 3: The Unintentional Over-engineering">Iteration 3: The Unintentional Over-engineering</a></li>
+                <li>
+                    <a href="#iteration-4-back-to-basics" aria-label="Iteration 4: Back-To-Basics">Iteration 4: Back-To-Basics</a></li>
+                <li>
+                    <a href="#case-analysis-htb-cyber-apocolypse-2025" aria-label="Case Analysis (HTB Cyber Apocolypse 2025)">Case Analysis (HTB Cyber Apocolypse 2025)</a></li>
+                <li>
+                    <a href="#whats-for-future" aria-label="What&rsquo;s for Future">What&rsquo;s for Future</a></li>
+                <li>
+                    <a href="#2-testing-with-local-models" aria-label="2. Testing With Local Models">2. Testing With Local Models</a></li>
+                <li>
+                    <a href="#3-testing-with-bigger-models-via-openroutercomwwwopenroutercom" aria-label="3. Testing With Bigger Models via openrouter.com">3. Testing With Bigger Models via openrouter.com</a></li>
                 <li>
                     <a href="#high-level-overview" aria-label="High-level overview">High-level overview</a>
                 </li>
@@ -163,11 +195,80 @@ Student   / Slave Agent(s)
     </details>
 </div>
 
-  <div class="post-content"><p>It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&rsquo;m glad through happenstance I reached out.</p>
+  <div class="post-content"><h1 id="still-a-wip-work---in---progress">Still a WIP (Work - In - Progress)<a hidden class="anchor" aria-hidden="true" href="#still-a-wip-work---in---progress">#</a></h1>
+<p>It was early September, when I reached out to Professor Yener expressing my interest to be involved in security research. Now, a few months into this RCA research, I&rsquo;m glad through happenstance I reached out.</p>
+<h1 id="objective">Objective<a hidden class="anchor" aria-hidden="true" href="#objective">#</a></h1>
+<p>Given a binary, is it possible to create a RCA (Root Cause Analysis) of a binary, given a PoC (Proof of Concept)</p>
 <h1 id="background">Background<a hidden class="anchor" aria-hidden="true" href="#background">#</a></h1>
+<p>First, what does RCA even mean?</p>
+<p>RCA, also known as Root Cause Analysis, is a consise report of why a system encountered an issue. In this research, the system will be a binary, and the issue will be a crash triggered by a PoC. This PoC will be either static, in the form of a <code>.poc</code> file, or it&rsquo;ll be dynamic, in form of a <code>.py</code> file. Ideally, for a closed-loop, better system,</p>
+<h1 id="cursory-research">Cursory Research<a hidden class="anchor" aria-hidden="true" href="#cursory-research">#</a></h1>
+<p>During the initial weeks, Patrick invited me to perform some cursory research on the current state of LLMs creating RCAs. At first, I tried to search for papers that were directly <code>RCA + LLMs + binary exploitation</code>. However, after turning empty-handed, I expanded my search to any <code>RCA + LLM</code> paper. Using <a href="https://arxiv.org/">arXiv</a>, I found two papers that caught my eye:</p>
+<ol>
+<li>RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models</li>
+<li>ChatDBG: Augmenting Debugging with Large Language Models</li>
+</ol>
+<h2 id="paper-1-rcagent">Paper 1: RCAgent<a hidden class="anchor" aria-hidden="true" href="#paper-1-rcagent">#</a></h2>
+<p>This paper pertains to RCA and LLMs in cloud systems - specifically Alibaba cloud. This paper comes up with a <code>RCAgent</code>, a &ldquo;tool-augmented LLM autonomous agent framework&rdquo;. What makes it different than the typical <code>ReAct</code> agent?</p>
+<p>To answer this question, one must first understand what <code>ReAct</code> agents even are.</p>
+<p>ReAct, also known as <code>Reasoning + Acting</code>, is a framework of autonomous agents powered by LLMs. It is essentially supposed to be a loop where the agent:</p>
+<ol>
+<li>thinks about what to do next</li>
+<li>acts, by calling a tool/api/api-via-mcp server</li>
+<li>observes the feedback from said action</li>
+<li>repeats the cycle</li>
+</ol>
+<p>This allows the agent the ability to solve complex tasks using step-by-step reasoning and evidence-gathering, rather than just generating the answer in a single-pass.</p>
+<p>Knowing this, RCAgent employes a few key upgrades:</p>
+<ol>
+<li>privacy-conscious (but also, not a requirement) - the paper uses locally deployed models, such as Vicuna</li>
+<li>a suite of tools utilized for context management
+<ul>
+<li>introduces &ldquo;observation snapshot key (obsk), which is compresses lengthy observations using key-value store</li>
+<li>it only shows the &ldquo;head&rdquo; to the agent, with hash-ids for the full data</li>
+<li>
 <blockquote>
-<p>What is root-cause analysis, specifically of binaries?</p>
+<p>check out the image below to see a visual representation</p>
 </blockquote>
+</li>
+</ul>
+</li>
+<li>enhanced tool system</li>
+</ol>
+<blockquote>
+<p>[insert things here]</p>
+</blockquote>
+<ol start="4">
+<li>a suite of stabiling tools
+<ul>
+<li>jsonregen</li>
+<li>error handling</li>
+</ul>
+</li>
+<li>advanced aggregation methods
+ReAct:
+RCAgent: self-consistency for action trajectories</li>
+</ol>
+<p><img alt="rcagent overview pic" loading="lazy" src="/rcagent-overview.png"></p>
+<p>Performance metrics (RCAgent vs ReAct)</p>
+<p><img alt="performance metrics overview pic" loading="lazy" src="/performance-research.png"></p>
+<h3 id="understanding-different-performance-metrics">Understanding Different Performance Metrics<a hidden class="anchor" aria-hidden="true" href="#understanding-different-performance-metrics">#</a></h3>
+<h3 id="understanding-tsc-aggregation-in-detail">Understanding TSC Aggregation in Detail<a hidden class="anchor" aria-hidden="true" href="#understanding-tsc-aggregation-in-detail">#</a></h3>
+<h2 id="paper-2-chatdbg">Paper 2: ChatDBG<a hidden class="anchor" aria-hidden="true" href="#paper-2-chatdbg">#</a></h2>
+<h1 id="creating-a-idealized-system-overview">Creating A Idealized System Overview<a hidden class="anchor" aria-hidden="true" href="#creating-a-idealized-system-overview">#</a></h1>
+<h1 id="iteration-1-the-sanity-check">Iteration 1: The Sanity Check<a hidden class="anchor" aria-hidden="true" href="#iteration-1-the-sanity-check">#</a></h1>
+<p><img alt="iteration-one-also-known-as-the-sanity-check" loading="lazy" src="/iter1.png"></p>
+<h1 id="iteration-2-attempt-at-future-proofing">Iteration 2: Attempt At Future-Proofing<a hidden class="anchor" aria-hidden="true" href="#iteration-2-attempt-at-future-proofing">#</a></h1>
+<p><img alt="second-attempt" loading="lazy" src="/iter2.png"></p>
+<h1 id="iteration-3-the-unintentional-over-engineering">Iteration 3: The Unintentional Over-engineering<a hidden class="anchor" aria-hidden="true" href="#iteration-3-the-unintentional-over-engineering">#</a></h1>
+<p><img alt="third-attempt" loading="lazy" src="/iter3.png"></p>
+<h1 id="iteration-4-back-to-basics">Iteration 4: Back-To-Basics<a hidden class="anchor" aria-hidden="true" href="#iteration-4-back-to-basics">#</a></h1>
+<p><img alt="fourth-attempt" loading="lazy" src="/iter1.png"></p>
+<h1 id="case-analysis-htb-cyber-apocolypse-2025">Case Analysis (HTB Cyber Apocolypse 2025)<a hidden class="anchor" aria-hidden="true" href="#case-analysis-htb-cyber-apocolypse-2025">#</a></h1>
+<h1 id="whats-for-future">What&rsquo;s for Future<a hidden class="anchor" aria-hidden="true" href="#whats-for-future">#</a></h1>
+<p><img alt="possible-attempt" loading="lazy" src="/future-iter.png"></p>
+<h1 id="2-testing-with-local-models">2. Testing With Local Models<a hidden class="anchor" aria-hidden="true" href="#2-testing-with-local-models">#</a></h1>
+<h1 id="3-testing-with-bigger-models-via-openroutercomwwwopenroutercom">3. Testing With Bigger Models via <a href="www.openrouter.com">openrouter.com</a><a hidden class="anchor" aria-hidden="true" href="#3-testing-with-bigger-models-via-openroutercomwwwopenroutercom">#</a></h1>
 <h1 id="high-level-overview">High-level overview<a hidden class="anchor" aria-hidden="true" href="#high-level-overview">#</a></h1>
 <ol>
 <li>Professor / Master Agent</li>
@@ -187,7 +288,7 @@ Student   / Slave Agent(s)
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Siddiq</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Siddiq</a></span> · 
 
     <span>
         Powered by
