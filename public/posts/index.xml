@@ -6,21 +6,14 @@
     <description>Recent content in Posts on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Dec 2025 19:31:38 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 21:19:15 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The 2025 Retrospective</title>
-      <link>http://localhost:1313/posts/draft-2025-retrospective/</link>
-      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
-      <guid>http://localhost:1313/posts/draft-2025-retrospective/</guid>
-      <description>A look back at my year academically.</description>
-    </item>
-    <item>
-      <title>AWS Security Specialty Reflections</title>
-      <link>http://localhost:1313/posts/draft-aws-security-specialty/</link>
-      <pubDate>Mon, 22 Dec 2025 15:55:11 -0500</pubDate>
-      <guid>http://localhost:1313/posts/draft-aws-security-specialty/</guid>
-      <description>Taking the AWS SCS-02 exam and what I learned from it</description>
+      <title>Quantum Reserach</title>
+      <link>http://localhost:1313/posts/quantum-reserach/</link>
+      <pubDate>Sun, 01 Mar 2026 21:19:15 -0500</pubDate>
+      <guid>http://localhost:1313/posts/quantum-reserach/</guid>
+      <description></description>
     </item>
     <item>
       <title>Almost Complete: RPI Lally Calendar Page</title>
@@ -111,30 +104,6 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <description>Using tampermonkey and discord webhooks to get insta notifications discretely</description>
     </item>
     <item>
-      <title>Running_log</title>
-      <link>http://localhost:1313/posts/running_log/</link>
-      <pubDate>Wed, 02 Apr 2025 14:05:31 -0400</pubDate>
-      <guid>http://localhost:1313/posts/running_log/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
-&lt;p&gt;The purpose of this specific blog is to create a public repository of all the tasks I&amp;rsquo;ve acheived in a day - and my plan is to continually update this blog and review my work on a day-to-day and week-to-week basis.&lt;/p&gt;
-&lt;h3 id=&#34;4-4-2025&#34;&gt;4-4-2025&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- Mongoose project
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- NCL Gym - Password Cracking
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Small Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;4-3-2025&#34;&gt;4-3-2025&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- FOCS HW 11 ✅
-- Web Sci Lab 5 ✅
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>UCONN CyberSEED 2025 Retrospective</title>
       <link>http://localhost:1313/posts/cyberseed-retro/</link>
       <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
@@ -147,20 +116,6 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <pubDate>Sat, 11 Jan 2025 00:02:50 -0500</pubDate>
       <guid>http://localhost:1313/posts/aws-clf02-experience/</guid>
       <description>Taking the AWS CLF exam what what I learned from it</description>
-    </item>
-    <item>
-      <title>2025 Plans</title>
-      <link>http://localhost:1313/posts/2025-plans/</link>
-      <pubDate>Wed, 01 Jan 2025 13:02:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2025-plans/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024 Retrospective</title>
-      <link>http://localhost:1313/posts/2024-retrospective/</link>
-      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024-retrospective/</guid>
-      <description>A look back at the 2024 season</description>
     </item>
   </channel>
 </rss>

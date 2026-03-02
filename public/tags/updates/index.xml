@@ -6,17 +6,49 @@
     <description>Recent content in Updates on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 23:04:42 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 28 Dec 2024 23:04:42 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Hey!&lt;/p&gt;
-&lt;p&gt;Thank you for visiting my corner of the internet - really. I&amp;rsquo;m Siddiq, someone who&amp;rsquo;s interested in philosophy, cybersecurity, and last but not least, k-pop.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;hey-im-siddiq&#34;&gt;Hey! I&amp;rsquo;m Siddiq&lt;/h1&gt;
+&lt;p&gt;Thank you for visiting my corner of the internet. I&amp;rsquo;m interested in philosophy, cybersecurity, and last but not least, k-pop.&lt;/p&gt;
 &lt;p&gt;This website serves as a hub for all things me - at the moment, here you will find my blogs about cybersecurity stuff. But I do plan on improving this site by adding more interesting things 🙏&lt;/p&gt;
-&lt;p&gt;In the meantime, have a wonderful day.&lt;/p&gt;</description>
+&lt;h1 id=&#34;certifications&#34;&gt;Certifications&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Certification&lt;/th&gt;
+          &lt;th&gt;Issued By&lt;/th&gt;
+          &lt;th&gt;Date&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/fbe1ab55-1bf0-4603-b831-107f727feb2c/public_url&#34;&gt;AWS Certified Solutions Architect - Associate&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Amazon Web Services (AWS)&lt;/td&gt;
+          &lt;td&gt;August 3, 2025&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/26b88a6c-1c6e-4adc-ad15-a2cc8391d6ff/public_url&#34;&gt;AWS Certified Cloud Practitioner&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Amazon Web Services (AWS)&lt;/td&gt;
+          &lt;td&gt;January 11, 2025&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/e4aa71e8-1548-4c5d-a417-33c308b623bf/public_url&#34;&gt;CompTIA Security+&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;CompTIA&lt;/td&gt;
+          &lt;td&gt;July 28, 2024&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/ea4e5c1c-8127-4423-8399-83633573d532/public_url&#34;&gt;ISC2 Certified in Cybersecurity&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;ISC2&lt;/td&gt;
+          &lt;td&gt;May 20, 2024&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;reach-out&#34;&gt;Reach Out&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m most active on Discord, but I&amp;rsquo;m contactable via email too:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

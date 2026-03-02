@@ -6,14 +6,21 @@
     <description>Recent content on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Dec 2025 19:31:38 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 21:19:15 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The 2025 Retrospective</title>
-      <link>http://localhost:1313/posts/draft-2025-retrospective/</link>
-      <pubDate>Mon, 22 Dec 2025 19:31:38 -0500</pubDate>
-      <guid>http://localhost:1313/posts/draft-2025-retrospective/</guid>
-      <description>A look back at my year academically.</description>
+      <title>Quantum Reserach</title>
+      <link>http://localhost:1313/posts/quantum-reserach/</link>
+      <pubDate>Sun, 01 Mar 2026 21:19:15 -0500</pubDate>
+      <guid>http://localhost:1313/posts/quantum-reserach/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RPI Lally NYC Trip - Round 2</title>
+      <link>http://localhost:1313/travel/test/</link>
+      <pubDate>Sun, 01 Mar 2026 02:18:15 -0500</pubDate>
+      <guid>http://localhost:1313/travel/test/</guid>
+      <description>&lt;p&gt;Mission: Visit Deloitte.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Philanthropy Work</title>
@@ -32,13 +39,6 @@
 &lt;ul&gt;
 &lt;li&gt;Going to look into it in the New Year&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>AWS Security Specialty Reflections</title>
-      <link>http://localhost:1313/posts/draft-aws-security-specialty/</link>
-      <pubDate>Mon, 22 Dec 2025 15:55:11 -0500</pubDate>
-      <guid>http://localhost:1313/posts/draft-aws-security-specialty/</guid>
-      <description>Taking the AWS SCS-02 exam and what I learned from it</description>
     </item>
     <item>
       <title>Almost Complete: RPI Lally Calendar Page</title>
@@ -149,30 +149,6 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <description>Using tampermonkey and discord webhooks to get insta notifications discretely</description>
     </item>
     <item>
-      <title>Running_log</title>
-      <link>http://localhost:1313/posts/running_log/</link>
-      <pubDate>Wed, 02 Apr 2025 14:05:31 -0400</pubDate>
-      <guid>http://localhost:1313/posts/running_log/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
-&lt;p&gt;The purpose of this specific blog is to create a public repository of all the tasks I&amp;rsquo;ve acheived in a day - and my plan is to continually update this blog and review my work on a day-to-day and week-to-week basis.&lt;/p&gt;
-&lt;h3 id=&#34;4-4-2025&#34;&gt;4-4-2025&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- Mongoose project
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- NCL Gym - Password Cracking
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Small Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;4-3-2025&#34;&gt;4-3-2025&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Big Items&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- FOCS HW 11 ✅
-- Web Sci Lab 5 ✅
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Medium Items&lt;/strong&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>UCONN CyberSEED 2025 Retrospective</title>
       <link>http://localhost:1313/posts/cyberseed-retro/</link>
       <pubDate>Sun, 09 Mar 2025 18:54:21 -0400</pubDate>
@@ -187,20 +163,6 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
       <description>Taking the AWS CLF exam what what I learned from it</description>
     </item>
     <item>
-      <title>2025 Plans</title>
-      <link>http://localhost:1313/posts/2025-plans/</link>
-      <pubDate>Wed, 01 Jan 2025 13:02:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2025-plans/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024 Retrospective</title>
-      <link>http://localhost:1313/posts/2024-retrospective/</link>
-      <pubDate>Sun, 29 Dec 2024 11:32:02 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024-retrospective/</guid>
-      <description>A look back at the 2024 season</description>
-    </item>
-    <item>
       <title>Resumé</title>
       <link>http://localhost:1313/resume/</link>
       <pubDate>Sun, 29 Dec 2024 10:53:50 -0500</pubDate>
@@ -210,12 +172,45 @@ Task 4: Integrate &lt;code&gt;checksec&lt;/code&gt;&lt;/p&gt;</description>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 28 Dec 2024 23:04:42 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Hey!&lt;/p&gt;
-&lt;p&gt;Thank you for visiting my corner of the internet - really. I&amp;rsquo;m Siddiq, someone who&amp;rsquo;s interested in philosophy, cybersecurity, and last but not least, k-pop.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;hey-im-siddiq&#34;&gt;Hey! I&amp;rsquo;m Siddiq&lt;/h1&gt;
+&lt;p&gt;Thank you for visiting my corner of the internet. I&amp;rsquo;m interested in philosophy, cybersecurity, and last but not least, k-pop.&lt;/p&gt;
 &lt;p&gt;This website serves as a hub for all things me - at the moment, here you will find my blogs about cybersecurity stuff. But I do plan on improving this site by adding more interesting things 🙏&lt;/p&gt;
-&lt;p&gt;In the meantime, have a wonderful day.&lt;/p&gt;</description>
+&lt;h1 id=&#34;certifications&#34;&gt;Certifications&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Certification&lt;/th&gt;
+          &lt;th&gt;Issued By&lt;/th&gt;
+          &lt;th&gt;Date&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/fbe1ab55-1bf0-4603-b831-107f727feb2c/public_url&#34;&gt;AWS Certified Solutions Architect - Associate&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Amazon Web Services (AWS)&lt;/td&gt;
+          &lt;td&gt;August 3, 2025&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/26b88a6c-1c6e-4adc-ad15-a2cc8391d6ff/public_url&#34;&gt;AWS Certified Cloud Practitioner&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Amazon Web Services (AWS)&lt;/td&gt;
+          &lt;td&gt;January 11, 2025&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/e4aa71e8-1548-4c5d-a417-33c308b623bf/public_url&#34;&gt;CompTIA Security+&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;CompTIA&lt;/td&gt;
+          &lt;td&gt;July 28, 2024&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.credly.com/badges/ea4e5c1c-8127-4423-8399-83633573d532/public_url&#34;&gt;ISC2 Certified in Cybersecurity&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;ISC2&lt;/td&gt;
+          &lt;td&gt;May 20, 2024&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;reach-out&#34;&gt;Reach Out&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m most active on Discord, but I&amp;rsquo;m contactable via email too:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

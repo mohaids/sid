@@ -11,11 +11,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = "/about/"
     weight = 1
   [[menu.main]]
-    identifier = "project-updates"
-    name = "Project Updates"
-    url = "/project-updates/"
-    weight = 17
-  [[menu.main]]
     identifier = "philanthropy-work"
     name = "Philanthropy Work"
     url = "/philanthropy-work/"
@@ -47,13 +42,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
     # Buttons for profile mode
     [[params.profileMode.buttons]]
       name = "Blogs"
-      url = "/archives"
+      url = "/blogs"
     [[params.profileMode.buttons]]
-      name = "Projects"
-      url = "/project-updates/"
-    [[params.profileMode.buttons]]
-      name = "Resume"
-      url = "/resume"
+      name = "Travel Blogs ✨"
+      url = "/travel"
 
   # Social Icons (moved inside profile mode)
   [[params.socialIcons]]

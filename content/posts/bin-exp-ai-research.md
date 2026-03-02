@@ -106,7 +106,7 @@ Performance metrics (RCAgent vs ReAct)
 
 
 
-# 3. Testing With Bigger Models via [openrouter.com](www.openrouter.com)
+# 3. Testing With Bigger Models via [openrouter.ai](https://www.openrouter.ai)
 
 
 
