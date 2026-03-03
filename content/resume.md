@@ -2,7 +2,7 @@
 date = '2024-12-29T10:53:50-05:00'
 draft = false
 title = 'Resumé'
-description = 'My professional experience and skills as of April 2025'
+description = 'My professional experience and skills as of March 2026'
 +++
 
 {{< rawhtml >}}
@@ -20,7 +20,7 @@ description = 'My professional experience and skills as of April 2025'
 </div>
 
 <div style="text-align: center; margin: 1.5rem 0;">
-    <a href="/pdfs/resume.pdf" 
+    <a href="/pdfs/resume2.pdf" 
        download 
        style="padding: 0.75rem 1.5rem; 
               background-color: #f8f9fa; 

@@ -9,14 +9,18 @@
     <lastBuildDate>Mon, 02 Mar 2026 16:37:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Current Research</title>
-      <link>http://localhost:1313/current-research/</link>
+      <title>Research Endevours</title>
+      <link>http://localhost:1313/research-endevours/</link>
       <pubDate>Mon, 02 Mar 2026 16:37:00 -0500</pubDate>
-      <guid>http://localhost:1313/current-research/</guid>
+      <guid>http://localhost:1313/research-endevours/</guid>
       <description>&lt;p&gt;Current research ventures:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/margin-research/&#34;&gt;Margin Research&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/quantum-reserach.md&#34;&gt;Old Quantum Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://siddiqmohaideen.com/posts/margin-research/&#34;&gt;Margin Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://siddiqmohaideen.com/posts/quantum-reserach.md&#34;&gt;Old Quantum Research&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Past research ventures:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://siddiqmohaideen.com/posts/bin-exp-ai-research/&#34;&gt;AI agent(s) + Crashed Binaries = RCA report&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     <item>
@@ -44,7 +48,8 @@
       <link>http://localhost:1313/travel/nyc-round-2/</link>
       <pubDate>Sun, 01 Mar 2026 02:18:15 -0500</pubDate>
       <guid>http://localhost:1313/travel/nyc-round-2/</guid>
-      <description>&lt;p&gt;Mission: Visit Deloitte.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Visitation Date: 03/11/2026&lt;/p&gt;
+&lt;p&gt;Mission: Visit Deloitte.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Philanthropy Work</title>
