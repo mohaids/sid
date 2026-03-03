@@ -11,9 +11,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = "/about/"
     weight = 1
   [[menu.main]]
-    identifier = "current-research"
-    name = "Current Research"
-    url = "/current-research/"
+    identifier = "research-endevours"
+    name = "Research Endevours"
+    url = "/research-endevours/"
     weight = 20
   [[menu.main]]
     identifier = "tags"

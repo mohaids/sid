@@ -10,4 +10,4 @@ Current research ventures:
 2. [Old Quantum Research](https://siddiqmohaideen.com/posts/quantum-reserach.md)
 
 Past research ventures:
-1. [AI agent(S) + Crashed Binaries = RCA report](https://siddiqmohaideen.com/posts/bin-exp-ai-research/)
+1. [AI agent(s) + Crashed Binaries = RCA report](https://siddiqmohaideen.com/posts/bin-exp-ai-research/)
