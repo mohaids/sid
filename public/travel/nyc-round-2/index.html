@@ -5,29 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>RCA &#43; LLM &#43; Binaries research progress | Siddiq</title>
-<meta name="keywords" content="research, progress">
-<meta name="description" content="11.27.2025
-Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.
-Take-aways:
-
-The AI provides a high-level overview of ./contractor which is good. However, doesn&rsquo;t get into the nitty-gritty of how exactly its solved.
-
-
-What I&rsquo;m thinking to solve this:
-
-Summarize GDB outputs / summarize the last 5 iterations.
-Need to include pighidra to get C code in order to make RCA faster.
-
-
-
-11.09.2025
-Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
-Task 2: Refactor the code, such that you just use the master_llm to spit out plan &#43; commands, then use a helper LLM to summarize said outputs of commands, so that the master_llm has a smaller context to worry about.
-Task 3: Integrate pighidra
-Task 4: Integrate checksec">
+<title>RPI Lally NYC Trip - Round 2 | Siddiq</title>
+<meta name="keywords" content="travel">
+<meta name="description" content="Mission: Visit Deloitte.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/bin-exp-ai-progress/">
+<link rel="canonical" href="http://localhost:1313/travel/nyc-round-2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5efd82fd54051937bc3a4e3654b29e498eb5ed0fd8d7daf2e32916273ee676e5.css" integrity="sha256-Xv2C/VQFGTe8Ok42VLKeSY617Q/Y19ry4ykWJz7mduU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
@@ -36,7 +18,7 @@ Task 4: Integrate checksec">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bin-exp-ai-progress/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/travel/nyc-round-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -145,98 +127,20 @@ Task 4: Integrate checksec">
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      RCA &#43; LLM &#43; Binaries research progress
+      RPI Lally NYC Trip - Round 2
     </h1>
-    <div class="post-meta"><span title='2025-11-02 12:33:42 -0500 EST'>November 2, 2025</span>&nbsp;·&nbsp;4 min
+    <div class="post-meta"><span title='2026-03-01 02:18:15 -0500 EST'>March 1, 2026</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
-
-  <div class="post-content"><p><strong>11.27.2025</strong>
-Refactoring code hell. Patrick gave the idea of using exploit.py instead of static .poc file.</p>
-<p>Take-aways:</p>
-<ol>
-<li>The AI provides a high-level overview of ./contractor which is good. However, doesn&rsquo;t get into the nitty-gritty of how exactly its solved.</li>
-</ol>
-<ul>
-<li>What I&rsquo;m thinking to solve this:
-<ul>
-<li>Summarize GDB outputs / summarize the last 5 iterations.</li>
-<li>Need to include pighidra to get C code in order to make RCA faster.</li>
-</ul>
-</li>
-</ul>
-<p><strong>11.09.2025</strong>
-Task 1: Create a persistent GDB Session. Should be pretty straight-forward to set up.
-Task 2: Refactor the code, such that you just use the <code>master_llm</code> to spit out plan + commands, then use a helper LLM to summarize said outputs of commands, so that the <code>master_llm</code> has a smaller context to worry about.
-Task 3: Integrate pighidra
-Task 4: Integrate <code>checksec</code></p>
-<p><strong>11.08.2025</strong>
-tldr: pain.</p>
-<p><strong>11.05.2025</strong> - Meeting day
-Main points:</p>
-<ol>
-<li>Instead of using this convoluted: master_llm&rsquo;s raw gdb commands + tool_call -&gt; helper llm, which will then reutrn the correct tool_calls, and then the system running the gdb commands. I should instead just ask master_llm to give me the <code>gdb</code> commands straight up - like originally done.</li>
-<li>Also - somehow I lose the notes?? Don&rsquo;t really know what Obsidian did to them.</li>
-<li>Need to create persistent GDB session.</li>
-<li>Please, the whole loop must work.</li>
-</ol>
-<p><strong>11.04.2025</strong>
-Need to run it through the LLM. Need to decipher whether or not the investigative path it suggests is fruitful. Fingers-crossed it is.</p>
-<p>So far, in terms of completion, haven&rsquo;t quite met all the requirements.</p>
-<ul>
-<li><input disabled="" type="checkbox"> making the llm return a logical plan + gdb commands, sending it to a helper llm to call <code>tool calls</code>. sending the results of the <code>tool calls</code> back to the master llm.
-<ul>
-<li>issue: the gdb execution part isn&rsquo;t quite working.</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> testing this whole process with a harder ctf to see if the plan it creates is logical, and the technical investigative path seems accurate
-<ul>
-<li>issue: did it, seems to work overall. however, would be greatly beneficial if source code is added.</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> implement pighidra into the mix.
-<ul>
-<li>issue: tried to integrate, but running into some issues. probably lower on the priority list to implement.</li>
-</ul>
-</li>
-</ul>
-<p><strong>11.03.2025</strong>
-Just pain - went down a rabbit hole in figuring out how a HTB challenge was solved, but realized all that time was wasted due to the binary, solver.py, or any other libc files was not included 😭</p>
-<p>Tried to understand another challenge, successfully did so. Took a while to create the .poc file. Tested it, it crashed, ran initial <code>crash context gathering</code> function.</p>
-<p><strong>11.02.2025</strong>
-3 main issus I need to fix:</p>
-<ol>
-<li>making llm return a logical plan, along with tool calls?
-<ul>
-<li>extract said tool calls, run them in a single persistent session</li>
-<li>send it back to llm, create loop of this</li>
-</ul>
-</li>
-<li>test with harder ctf challenge</li>
-<li>integrate pighidra</li>
-</ol>
-<hr>
-<p>interesting observation(s):</p>
-<ol>
-<li>hallucination of tool calls - in the time when i didn&rsquo;t include tool calls in the message i sent the llm, it hallucinated a tool call instead 😭. to be specific, it talk about there being a <code>run_gdb</code> tool call, but it never existed?</li>
-<li>highly inconsistent responses. when i ran the llm with tool calls, it usually doesn&rsquo;t provide detailed reasoning, however, one time it did, and i was overjoyed. but that only happened once, and its back to just calling tools. or shall i say, a single fucking tool, instead of the multiple it was seemingly instructed to do.</li>
-</ol>
-<p><strong>hypothesis:</strong>
-perhaps these issues with the llm only giving one tool call can be solved by asking it to give the gdb commands, extract them commands, send it to a helper llm that can convert the gdb commands to the tool calls, then give back the tool calls, which i will then execute in the gdbmanager session. then append those results back to messages. then call the main llm again asking if it either wants to create the rca report now that it has all the necessary information, or if it wants to continue to investigate. if it wants to continue to investigate, then do the same process over again.</p>
-<p><strong>end of day conclusion</strong>:
-there&rsquo;s a time where everyone has all the ambition in the world and eventually all of them reach a point of pragmatism and cut their losses. that is the situation i am at right now.</p>
-<p>i revamped the core logic flow of how the ReAct agent will behave. the actual technical implementation of the gdb execution is being a little cumbersome, but i did a major revamp of that too - created a whole new class n stuff.</p>
-<p>the main thing i need to focus on before the day is over is to see how the agent behaves with a much harder ctf binary and is it able to accurately figure out how to make headwinds with it.</p>
-<p>i also tried to integrate pighidra with my</p>
+  <div class="post-content"><p>Mission: Visit Deloitte.</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/research/">Research</a></li>
-      <li><a href="http://localhost:1313/tags/progress/">Progress</a></li>
+      <li><a href="http://localhost:1313/tags/travel/">Travel</a></li>
     </ul>
   </footer>
 </article>

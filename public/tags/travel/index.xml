@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RPI Lally NYC Trip - Round 2</title>
-      <link>http://localhost:1313/travel/test/</link>
+      <link>http://localhost:1313/travel/nyc-round-2/</link>
       <pubDate>Sun, 01 Mar 2026 02:18:15 -0500</pubDate>
-      <guid>http://localhost:1313/travel/test/</guid>
+      <guid>http://localhost:1313/travel/nyc-round-2/</guid>
       <description>&lt;p&gt;Mission: Visit Deloitte.&lt;/p&gt;</description>
     </item>
   </channel>
