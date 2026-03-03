@@ -8,13 +8,13 @@ description = 'My professional experience and skills as of March 2026'
 {{< rawhtml >}}
 <div style="margin-bottom: 1rem;">
     <object
-        data="/pdfs/resume.pdf"
+        data="/pdfs/resume2.pdf"
         type="application/pdf"
         width="100%"
         height="980px"
         style="border: 1px solid #eaeaea; border-radius: 4px;">
         <p>It appears your browser doesn't support PDFs. 
-           <a href="/pdfs/resume.pdf">Download the PDF</a> instead.
+           <a href="/pdfs/resume2.pdf">Download the PDF</a> instead.
         </p>
     </object>
 </div>
