@@ -1,6 +1,6 @@
 +++
 date = '2026-03-19T23:09:17-04:00'
-draft = false
+draft = true
 title = 'Metaphorical Travel'
 +++
 
