@@ -6,24 +6,16 @@
     <description>Recent content in Posts on Siddiq</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:22:34 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 21:09:48 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HV TechFest: What I Learned From Losing</title>
-      <link>http://localhost:1313/posts/hvtechfest/</link>
-      <pubDate>Sun, 05 Apr 2026 00:22:34 -0400</pubDate>
-      <guid>http://localhost:1313/posts/hvtechfest/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Lessons</title>
       <link>http://localhost:1313/posts/lessons/</link>
       <pubDate>Thu, 05 Mar 2026 21:09:48 -0500</pubDate>
       <guid>http://localhost:1313/posts/lessons/</guid>
       <description>&lt;p&gt;The following is a bunch of scattered (hopefully not too scattered) notes from experienced people in the tech industry.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Tips regarding creating an effective piece of writing to update a project:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&#34;1&#34;&gt;1&lt;/h2&gt;
+&lt;p&gt;Tips regarding creating an effective piece of writing to update a project:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Consider person reading this article will spend ~ 5-10 seconds - at most.&lt;/li&gt;
 &lt;/ul&gt;
@@ -34,26 +26,6 @@
 &lt;li&gt;Impact&lt;/li&gt;
 &lt;li&gt;Next Steps&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Margin Research, Research</title>
-      <link>http://localhost:1313/posts/margin-research/</link>
-      <pubDate>Mon, 02 Mar 2026 16:31:10 -0500</pubDate>
-      <guid>http://localhost:1313/posts/margin-research/</guid>
-      <description>&lt;p&gt;Article currently in progress.&lt;/p&gt;
-&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
-&lt;p&gt;Building a graph-based system to identify and profile software supply chain threat actors by correlating their digital identities across platforms with vulnerable data in open-source software.&lt;/p&gt;
-&lt;h2 id=&#34;review-of-past-groups-work&#34;&gt;Review of past group&amp;rsquo;s work&lt;/h2&gt;
-&lt;h2 id=&#34;current-field-state&#34;&gt;Current Field State&lt;/h2&gt;
-&lt;h2 id=&#34;literature-review&#34;&gt;Literature review&lt;/h2&gt;
-&lt;h2 id=&#34;ideas&#34;&gt;Ideas&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>Quantum Reserach</title>
-      <link>http://localhost:1313/posts/quantum-reserach/</link>
-      <pubDate>Sun, 01 Mar 2026 21:19:15 -0500</pubDate>
-      <guid>http://localhost:1313/posts/quantum-reserach/</guid>
-      <description></description>
     </item>
     <item>
       <title>Almost Complete: RPI Lally Calendar Page</title>
