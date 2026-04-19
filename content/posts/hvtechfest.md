@@ -1,6 +1,6 @@
 +++
 date = '2026-04-05T00:22:34-04:00'
-draft = false
+draft = true
 title = 'HV TechFest: What I Learned From Losing'
 +++
 
