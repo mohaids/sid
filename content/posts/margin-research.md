@@ -1,6 +1,6 @@
 +++
 date = '2026-03-02T16:31:10-05:00'
-draft = false
+draft = true
 title = 'Margin Research, Research'
 [cover]
 image = "/margin-research-logo.png"
