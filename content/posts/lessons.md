@@ -6,9 +6,7 @@ title = 'Lessons'
 
 The following is a bunch of scattered (hopefully not too scattered) notes from experienced people in the tech industry.
 
-## 1
-
-Tips regarding creating an effective piece of writing to update a project:
+## 1 Creating an effective piece of writing to update a project:
 - Consider person reading this article will spend ~ 5-10 seconds - at most.
 
 Example layout:

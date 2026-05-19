@@ -4,8 +4,6 @@ draft = false
 title = 'Side Quests'
 +++
 
-## (POTENTIALLY): Troy, NY - Police Objective Review Board
-
 ## The Acacia Fraternity
 - Parlimentarian: Host the soul of Pythagoras within my mortal coil.
 - Social Media Chair: the best chair, ofc.
